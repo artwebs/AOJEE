@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class BinMap extends IBinObject {
+public class AOMap extends IObject {
 	private ArrayList item=new ArrayList();
 	public ArrayList getItem() {
 		return item;
 	}
-	public BinMap setItemByHashMap(HashMap hm){
+	public AOMap setItemByHashMap(HashMap hm){
 		Iterator it= hm.keySet().iterator();
 		Object key=new Object();
 		Object value=new Object();
@@ -218,7 +218,7 @@ public class BinMap extends IBinObject {
 		return Flage;
 	}
 	
-	public void addend(BinMap adder)
+	public void addend(AOMap adder)
 	{
 		adder.getItem().addAll(0,this.item);
 	}
@@ -248,7 +248,7 @@ public class BinMap extends IBinObject {
 		return obj;
 	}
 	public static void main(String[] args) {
-		BinMap pm=new BinMap();
+		AOMap pm=new AOMap();
 		pm.put("1", "a");
 		pm.put("2", "b");
 		pm.setValue("2", "c");
@@ -257,7 +257,7 @@ public class BinMap extends IBinObject {
 //		if(pm.getValue("2")!=null)rs=(String)pm.getValue("3");
 //		System.out.println(pm.getItem());
 		
-		BinMap adder=new BinMap();
+		AOMap adder=new AOMap();
 		adder.put("3", "d");
 		adder.put("4", "e");
 		adder.put("5", "f");

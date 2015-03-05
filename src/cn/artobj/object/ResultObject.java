@@ -1,9 +1,9 @@
 package cn.artobj.object;
 
-public class ResultObject extends IBinObject {
+public class ResultObject extends IObject {
 	private String code;
 	private String message;
-	private BinMap args;
+	private AOMap args;
 	public String getCode() {
 		return code;
 	}
@@ -16,10 +16,10 @@ public class ResultObject extends IBinObject {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public BinMap getArgs() {
+	public AOMap getArgs() {
 		return args;
 	}
-	public void setArgs(BinMap args) {
+	public void setArgs(AOMap args) {
 		this.args = args;
 	}
 	

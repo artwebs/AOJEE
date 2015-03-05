@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class BinList extends IBinObject {
+public class AOList extends IObject {
 	private ArrayList item=new ArrayList();
 	public void setItem(ArrayList item) {
 		this.item = item;
@@ -22,14 +22,14 @@ public class BinList extends IBinObject {
 		return (HashMap)item.get(i);
 	}
 	
-	public BinMap getMapItem(int i)
+	public AOMap getMapItem(int i)
 	{
-		BinMap para=new BinMap();
+		AOMap para=new AOMap();
 		para.setItemByHashMap((HashMap)item.get(i));
 		return para;
 	}
 
-    public BinList appendFromJSONArray(JSONArray array)
+    public AOList appendFromJSONArray(JSONArray array)
     {
         try {
             for (int i = 0; i <array.length() ; i++) {
@@ -64,7 +64,7 @@ public class BinList extends IBinObject {
 	public JSONObject getMapItem2JSONObject(int i)
 	{
 		JSONObject obj=new JSONObject();
-		BinMap map=getMapItem(i);
+		AOMap map=getMapItem(i);
 		for(int ni=0;ni<map.size();ni++)
 			try {
 				obj.put(map.getKey(ni).toString(), map.getValue(ni).toString());
@@ -241,25 +241,25 @@ public class BinList extends IBinObject {
 		return rsInt;
 	}
 	
-	public void addend(BinList adder)
+	public void addend(AOList adder)
 	{
 		this.item.addAll(adder.getItem());
 	}
 	
-	public void addendTop(BinList adder)
+	public void addendTop(AOList adder)
 	{
 		this.item.addAll(0,adder.getItem());
 	}
 	
-	public BinList clone(){
-		BinList rsList=new BinList();
+	public AOList clone(){
+		AOList rsList=new AOList();
 		rsList.setItem((ArrayList)item.clone());
 		return rsList;
 		
 	}
 	public static void main(String[] args) {
 		
-		BinList atp=new BinList();
+		AOList atp=new AOList();
 		atp.put(0,"a", "1");
 		atp.put(0,"b", "2");
 		atp.put(0,"c", "3");
