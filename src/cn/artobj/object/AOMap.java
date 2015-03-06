@@ -1,8 +1,9 @@
 package cn.artobj.object;
 
 
-import org.json.JSONException;
-import org.json.JSONObject;
+
+import cn.artobj.json.JSONException;
+import cn.artobj.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
