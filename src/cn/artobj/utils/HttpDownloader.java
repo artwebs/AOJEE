@@ -1,6 +1,10 @@
 package cn.artobj.utils;
 
 
+import android.os.Handler;
+import android.util.Log;
+import cn.artobj.android.utils.FileUtils;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -56,72 +60,72 @@ public class HttpDownloader {
 		return sb.toString();
 	}
 
-//	/**
-//	 * 该函数返回整形 -1：代表下载文件出错 0：代表下载文件成功 1：代表文件已经存在
-//	 */
-//	public int downFile(String urlStr, String path, String fileName) {
-//		InputStream inputStream = null;
-//		try {
-//			FileUtils fileUtils = new FileUtils(path);
-//
-//			if (fileUtils.isFileExist(fileName)) {
-//				return 1;
-//			} else {
-//				openConn(urlStr);
-//				inputStream = getInputStream();
-//				File resultFile = fileUtils.write2SDFromInput(fileName, inputStream);
-//				if (resultFile == null) {
-//					return -1;
-//				}
-//			}
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			return -1;
-//		} finally {
-//			try {
-//				inputStream.close();
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		}
-//		return 0;
-//	}
-//
-//	/**
-//	 * 该函数返回整形 -1：代表下载文件出错 -2保存文件错误 0：代表下载文件成功 1：代表文件已经存在
-//	 */
-//	public int downFile(String urlStr, String path, String fileName,Handler handler) {
-//
-//		InputStream inputStream = null;
-//		try {
-//
-//			FileUtils fileUtils = new FileUtils(path);
-//			Log.d(tag,urlStr);
-//			Log.d(tag,fileName);
-//			Log.d(tag,(fileUtils.isFileExist(fileName))+"");
-//			if (fileUtils.isFileExist(fileName)) {
-//				return 1;
-//			} else {
-//				openConn(urlStr);
-//				handler.sendMessage(handler.obtainMessage(3,urlConn.getContentLength()+""));
-//				inputStream = getInputStream();
-//				File resultFile = fileUtils.write2SDFromInput(fileName, inputStream,handler);
-//				if (resultFile == null) {
-//					return -2;
-//				}
-//			}
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			return -1;
-//		} finally {
-//			try {
-//				inputStream.close();
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		}
-//		return 0;
-//	}
+	/**
+	 * 该函数返回整形 -1：代表下载文件出错 0：代表下载文件成功 1：代表文件已经存在
+	 */
+	public int downFile(String urlStr, String path, String fileName) {
+		InputStream inputStream = null;
+		try {
+			FileUtils fileUtils = new FileUtils(path);
+
+			if (fileUtils.isFileExist(fileName)) {
+				return 1;
+			} else {
+				openConn(urlStr);
+				inputStream = getInputStream();
+				File resultFile = fileUtils.write2SDFromInput(fileName, inputStream);
+				if (resultFile == null) {
+					return -1;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		} finally {
+			try {
+				inputStream.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return 0;
+	}
+
+	/**
+	 * 该函数返回整形 -1：代表下载文件出错 -2保存文件错误 0：代表下载文件成功 1：代表文件已经存在
+	 */
+	public int downFile(String urlStr, String path, String fileName,Handler handler) {
+
+		InputStream inputStream = null;
+		try {
+
+			FileUtils fileUtils = new FileUtils(path);
+			Log.d(tag, urlStr);
+			Log.d(tag,fileName);
+			Log.d(tag,(fileUtils.isFileExist(fileName))+"");
+			if (fileUtils.isFileExist(fileName)) {
+				return 1;
+			} else {
+				openConn(urlStr);
+				handler.sendMessage(handler.obtainMessage(3,urlConn.getContentLength()+""));
+				inputStream = getInputStream();
+				File resultFile = fileUtils.write2SDFromInput(fileName, inputStream,handler);
+				if (resultFile == null) {
+					return -2;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		} finally {
+			try {
+				inputStream.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return 0;
+	}
 
 	/**
 	 * 根据URL得到输入流

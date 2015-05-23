@@ -1,7 +1,5 @@
 package cn.artobj.android.view;
 
-import cn.aoandroid.R;
-import cn.aoandroid.object.BinList;
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
@@ -14,12 +12,14 @@ import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import cn.artobj.aoandroid.R;
+import cn.artobj.object.AOList;
 
 public class ArtMenuView extends LinearLayout {
 	private Context context;
 	private TableLayout menuTbl;
 	
-	protected BinList dataList=new BinList();
+	protected AOList dataList=new AOList();
 	protected int colnum=3;
 	protected int padding_in_dp=15;
 	private int height=95;

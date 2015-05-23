@@ -4,13 +4,13 @@ import android.app.Activity;
 import android.util.Log;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
-import cn.aoandroid.ListAdapter.ListAdapter;
 import android.widget.Toast;
-import cn.aoandroid.object.BinList;
+import cn.artobj.android.adapter.ListAdapter;
+import cn.artobj.object.AOList;
 
 public class ArtListControlPage implements OnScrollListener {
 	private final static String tag="ArtListViewPage";
-	private BinList list=new BinList();
+	private AOList list=new AOList();
 	private  Activity window;
 	private ListAdapter adapter;
 	private int page=1;
@@ -20,7 +20,7 @@ public class ArtListControlPage implements OnScrollListener {
 	private int dataSize=0;
 	private OnControlPageListener listener;
 	
-	public BinList getList() {
+	public AOList getList() {
 		return list;
 	}
 
@@ -96,7 +96,7 @@ public class ArtListControlPage implements OnScrollListener {
 		listener.loadMoreData(page,pageSize);
 	}
 	
-	public void notifyDataChanged(BinList tmpList)
+	public void notifyDataChanged(AOList tmpList)
 	{
 		if(tmpList.size()>0)
     	{

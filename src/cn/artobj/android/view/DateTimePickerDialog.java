@@ -3,8 +3,6 @@ package cn.artobj.android.view;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import cn.aoandroid.R;
-import cn.aoandroid.utils.Utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,6 +15,7 @@ import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
+import cn.artobj.aoandroid.R;
 
 public class DateTimePickerDialog implements  OnDateChangedListener,OnTimeChangedListener{
     private DatePicker datePicker;

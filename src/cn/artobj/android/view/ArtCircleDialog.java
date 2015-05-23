@@ -1,10 +1,10 @@
 package cn.artobj.android.view;
 
-import cn.aoandroid.comm.DialogStyle;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
+import cn.artobj.android.application.DialogStyle;
 
 public class ArtCircleDialog {
 	protected  ProgressDialog progressDialog = null;

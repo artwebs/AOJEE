@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import cn.aoandroid.UI.DataParseXML.DataFlag;
-import cn.aoandroid.utils.HttpDownloader;
-import cn.aoandroid.utils.Utils;
 
 
 import android.app.Activity;

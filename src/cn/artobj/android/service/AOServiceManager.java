@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.LocalBroadcastManager;
 
-public class ArtServiceManager {
+public class AOServiceManager {
 	private static Activity activity;
 	private static Intent serviceIntent;
 	private static AlarmManager manager;
@@ -29,8 +29,8 @@ public class ArtServiceManager {
 		if(activity==null)
 		{
 			activity=obj;
-			ArtService.setServiceResult(serviceSign);
-			ArtService.setBroadcaster(LocalBroadcastManager.getInstance(activity));
+			AOService.setServiceResult(serviceSign);
+			AOService.setBroadcaster(LocalBroadcastManager.getInstance(activity));
 			if(iTime!=0)intervalTime=iTime;
 			serviceIntent=new Intent(obj,tagClass);
     		if(manager==null)manager=(AlarmManager) activity.getSystemService(Context.ALARM_SERVICE);

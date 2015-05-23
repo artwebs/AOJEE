@@ -9,10 +9,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
 
-import cn.aoandroid.utils.FileUtils;
 
 import android.os.Handler;
 import android.util.Log;
+import cn.artobj.android.utils.FileUtils;
 
 public class ClientTCP extends Client {
 	private static String tag="ClientTCP";

@@ -1,11 +1,10 @@
 package cn.artobj.android.application;
 
+import cn.artobj.android.utils.FileUtils;
+import cn.artobj.utils.HttpDownloader;
+import cn.artobj.utils.Utils;
 import org.json.JSONObject;
 
-import cn.aoandroid.net.NetworkProber;
-import cn.aoandroid.utils.FileUtils;
-import cn.aoandroid.utils.HttpDownloader;
-import cn.aoandroid.utils.Utils;
 import android.R;
 import android.app.Activity;
 import android.app.AlertDialog;

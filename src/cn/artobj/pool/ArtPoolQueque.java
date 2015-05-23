@@ -1,17 +1,19 @@
 package cn.artobj.pool;
 
+import android.util.Log;
+import cn.artobj.object.AOMap;
+
 import java.util.HashMap;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import cn.aoandroid.object.BinMap;
 
 public abstract class ArtPoolQueque {
 	private final static String tag="ArtPoolQueque";
 	private BlockingQueue<String> queue;
-	private HashMap<String,BinMap> runMap=new HashMap<String,BinMap>();
+	private HashMap<String,AOMap> runMap=new HashMap<String,AOMap>();
 	private ExecutorService exec;
 	public ArtPoolQueque(int maxCount)
 	{
@@ -25,7 +27,7 @@ public abstract class ArtPoolQueque {
 	}
 	
 	
-	public void add(String key,BinMap map)
+	public void add(String key,AOMap map)
 	{
 		if(!runMap.containsKey(key))
 		{
@@ -34,7 +36,7 @@ public abstract class ArtPoolQueque {
 		}
 		else
 		{
-			Log.d(tag, key+"=》正在处理");
+			Log.d(tag, key + "=》正在处理");
 		}
 		
 	}
@@ -63,6 +65,6 @@ public abstract class ArtPoolQueque {
 		}
 	}
 	
-	public abstract void doRun(String key,BinMap map);
+	public abstract void doRun(String key,AOMap map);
 
 }

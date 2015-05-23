@@ -1,11 +1,11 @@
 package cn.artobj.android.view;
 
+import cn.artobj.aoandroid.R;
+import cn.artobj.object.AOList;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import cn.aoandroid.R;
-import cn.aoandroid.object.BinList;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -23,7 +23,7 @@ public class SingleChoiceView extends RelativeLayout {
 	private String valueField;
 	private String key;
 	private String value;
-	private BinList list;
+	private AOList list;
 	private TextView titleView;
 	private RadioGroup itemGroup;
 	
@@ -57,7 +57,7 @@ public class SingleChoiceView extends RelativeLayout {
 	public SingleChoiceView(Context context) {
 		super(context);
 		this.context=context;
-		list=new BinList();
+		list=new AOList();
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -69,7 +69,7 @@ public class SingleChoiceView extends RelativeLayout {
 		titleView=(TextView) findViewById(R.id.titleView);
 		itemGroup=(RadioGroup) findViewById(R.id.itemGroup);
 		itemGroup.setOnCheckedChangeListener(onCheckedChangeListener);
-		list=new BinList();
+		list=new AOList();
 	}
 	
 	

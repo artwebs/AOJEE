@@ -4,14 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.widget.TableRow;
 import android.widget.TextView;
-import cn.aoandroid.R;
-import cn.aoandroid.object.BinMap;
+import cn.artobj.aoandroid.R;
+import cn.artobj.object.AOMap;
 
 public abstract class SubmitItem {
 	private String name;
 	private String originValue="";
     private SubmitItemDelegate itemDelegate;
-    private int itemLayoutID=R.layout.submititem;
+    private int itemLayoutID= R.layout.submititem;
 
 	public static enum ItemKey{
 		name,cname,value,dicvalue,type,display,readonly,unit,mache,maxValue,minValue
@@ -35,7 +35,7 @@ public abstract class SubmitItem {
 		return originValue;
 	}
 
-	public TableRow buildItem(Context context,BinMap paraRow)
+	public TableRow buildItem(Context context,AOMap paraRow)
 	{
 		TableRow rowLayout=(TableRow) ((Activity) context).getLayoutInflater().inflate(itemLayoutID, null);
 		TextView cnameTView=(TextView) rowLayout.findViewById(R.id.cnameTView);

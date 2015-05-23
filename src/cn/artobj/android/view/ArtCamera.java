@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import cn.aoandroid.R;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -33,6 +32,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import cn.artobj.aoandroid.R;
 
 public class ArtCamera extends RelativeLayout {
 	private final static String tag="ArtCamera";

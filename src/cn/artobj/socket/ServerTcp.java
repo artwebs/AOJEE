@@ -41,8 +41,7 @@ public class ServerTcp {
 					server=new ServerSocket(port);
 					while(true){     
 						Socket socket=null;     
-			            try {     
-			                //���տͻ�����,ֻҪ�ͻ�����������,�ͻᴥ��accept();�Ӷ�������     
+			            try {
 			                socket=server.accept();     
 			                executorService.execute(getRunnable(socket));  
 			            } catch (Exception e) {     

@@ -6,23 +6,21 @@ import java.sql.Types;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import cn.aoandroid.LHB;
-import cn.aoandroid.object.BinMap;
+import cn.artobj.object.AOMap;
 
 
-
-public class DbUtil extends LHB {
-	public BinMap getNoExKey(BinMap para) {
-		BinMap rsLm=this.getNoExKey(para);
+public class DbUtil extends AOMap {
+	public AOMap getNoExKey(AOMap para) {
+		AOMap rsLm=this.getNoExKey(para);
 		return rsLm;
 	}
 	
-	public BinMap getNoExPara(BinMap para) {
-		BinMap rsLm=this.getNoExPara(para);
+	public AOMap getNoExPara(AOMap para) {
+		AOMap rsLm=this.getNoExPara(para);
 		return rsLm;
 	}
 	
-	public String getInsertPart(BinMap para) {
+	public String getInsertPart(AOMap para) {
 		String rsStr="";
 		String fieldpart="";
 		String valuepart="";		
@@ -55,7 +53,7 @@ public class DbUtil extends LHB {
 	}
 
 
-	public String getSelectField(BinMap para) {
+	public String getSelectField(AOMap para) {
 		String rsStr="";
 		String regex="\\s+as\\s+";
 		Pattern p=Pattern.compile(regex,Pattern.UNICODE_CASE);
@@ -75,7 +73,7 @@ public class DbUtil extends LHB {
 		return rsStr;
 	}
 
-	public String getUpdatePart(BinMap para) {
+	public String getUpdatePart(AOMap para) {
 		String rsStr="";
 		for(int i=0;i<para.size();i++){
 			String key=(String)para.getKey(i);
@@ -106,7 +104,7 @@ public class DbUtil extends LHB {
 	 */
 	public static void main(String[] args) {
 		DbUtil isf=new DbUtil();
-		BinMap lm=new BinMap();
+		AOMap lm=new AOMap();
 		lm.put("a.string", "1");
 		lm.put("b.nextval as b1", "2");
 		lm.put("c", "3");
@@ -115,7 +113,7 @@ public class DbUtil extends LHB {
 //		String i=isf.getInsertPart(lm);
 //		String u=isf.getUpdatePart(lm);
 //		String s=isf.getSelectField(lm);
-		BinMap s=isf.getNoExKey(lm);
+		AOMap s=isf.getNoExKey(lm);
 //		
 //		System.out.println(i);
 //		System.out.println(u);

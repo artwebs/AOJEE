@@ -5,14 +5,14 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
 
-public abstract class ArtService extends Service {
+public abstract class AOService extends Service {
 
 	private static LocalBroadcastManager broadcaster;
 
 	private static String SERVICE_RESULT="cn.aoandroid.service.ArtService";
 	public final static String RESULT_TAG="tag";
 	private static boolean isSendbroad=false;
-	private static ArtService self;
+	private static AOService self;
 
 
 	

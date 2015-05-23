@@ -1,13 +1,12 @@
 package cn.artobj.android.data;
 
-import cn.aoandroid.object.BinList;
-import cn.aoandroid.object.BinMap;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import cn.artobj.object.AOList;
 
 public abstract class SQLite{
 	protected SQLiteOpenHelper dbHelper;
@@ -55,10 +54,10 @@ public abstract class SQLite{
 	public abstract void onCreate(SQLiteDatabase db);
 	public abstract void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion);
 	
-	public BinList query(String sql,String[] selectionArgs)
+	public AOList query(String sql,String[] selectionArgs)
 	{
 		this.connection();
-		BinList list=new BinList();
+		AOList list=new AOList();
 		Cursor cursor = this.db.rawQuery(sql, selectionArgs);
 		int j=0;
 		while (cursor.moveToNext())

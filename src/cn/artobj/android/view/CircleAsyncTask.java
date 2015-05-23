@@ -1,7 +1,5 @@
 package cn.artobj.android.view;
 
-import cn.aoandroid.object.BinMap;
-import cn.aoandroid.utils.AndroidUtils;
 
 
 import android.app.ProgressDialog;
