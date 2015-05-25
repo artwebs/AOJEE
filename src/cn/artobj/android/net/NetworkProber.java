@@ -20,7 +20,7 @@ import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-public class NetworkProber1 {
+public class NetworkProber {
 	private static String tag="NetworkProber";
     /** 
      * 网络是否可用 

@@ -6,10 +6,10 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 
-public class MobileNet1 {
+public class MobileNet {
 	private boolean netStatus=false;
 	private Context act;
-	public MobileNet1(Context act)
+	public MobileNet(Context act)
 	{
 		this.act=act;
 	}
