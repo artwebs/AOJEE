@@ -7,7 +7,7 @@ import android.util.Log;
 import cn.artobj.android.application.AppDefault;
 import cn.artobj.android.application.DialogStyle;
 import cn.artobj.android.data.AODBCmd;
-import cn.artobj.android.net.NetworkProber;
+import cn.artobj.android.net.NetworkProber1;
 import cn.artobj.android.view.ArtCircleDialog;
 import cn.artobj.pool.ArtPoolSingleFixed;
 import cn.artobj.utils.Base64;
@@ -82,7 +82,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 		this.arrData=data;
 		this.iRCallObj=iRCallObj;
         try {
-            if (NetworkProber.isNetworkAvailable(AppDefault.getAppContext()))
+            if (NetworkProber1.isNetworkAvailable(AppDefault.getAppContext()))
             {
                 executor = Executors.newCachedThreadPool();
                 this.startPool();
