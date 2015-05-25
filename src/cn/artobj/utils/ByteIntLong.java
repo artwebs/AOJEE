@@ -1,6 +1,6 @@
 package cn.artobj.utils;
 
-public class ByteIntLong1 {
+public class ByteIntLong {
 	 public final static byte[] getBytes(short s, boolean asc) {
 	    byte[] buf = new byte[2];
 	    if (asc)
