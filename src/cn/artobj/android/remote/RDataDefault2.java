@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public abstract class RDataDefault extends RData {
+public abstract class RDataDefault2 extends RData {
     private final String tag="RDataDefault";
     private String key="X+v!zSwkUloAQ$Gf/n)PVbi7";
     private String iv="k&dWHiQu";
@@ -23,12 +23,12 @@ public abstract class RDataDefault extends RData {
     private int cType=1;
     private int ptlVersion=2;
 
-	public RDataDefault(DATATYPE type, String cmdCode, String params) {
+	public RDataDefault2(DATATYPE type, String cmdCode, String params) {
 		super(type, cmdCode, params);
 		// TODO Auto-generated constructor stub
 	}
 
-	public RDataDefault(String key, String iv, int sysid, DATATYPE type, String cmdCode, String params){
+	public RDataDefault2(String key, String iv, int sysid, DATATYPE type, String cmdCode, String params){
         super(type, cmdCode, params);
         this.key=key;
         this.iv=iv;
