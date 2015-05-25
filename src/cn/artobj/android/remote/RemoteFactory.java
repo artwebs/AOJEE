@@ -6,7 +6,7 @@ import android.content.DialogInterface.OnCancelListener;
 import android.util.Log;
 import cn.artobj.android.application.AppDefault;
 import cn.artobj.android.application.DialogStyle;
-import cn.artobj.android.data.AODBCmd;
+import cn.artobj.android.data.AODBCmd1;
 import cn.artobj.android.net.NetworkProber;
 import cn.artobj.android.view.ArtCircleDialog;
 import cn.artobj.pool.ArtPoolSingleFixed;
@@ -157,7 +157,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			{
                 String cacheStr= null;
                 try {
-                    result= Base64.decode2Byte(AODBCmd.queryCmdResult(rdata.getAllCommand()));
+                    result= Base64.decode2Byte(AODBCmd1.queryCmdResult(rdata.getAllCommand()));
 					Log.w(tag,"使用缓存数据:"+rdata.getAllCommand());
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -183,7 +183,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 				if(rdata.getCallObj()!=null)
 					try {
                         if(rdata.isCache()&&rdata.getResponse().succeed())
-                            AODBCmd.saveCmdResult(rdata.getAllCommand(), Base64.encode2Str(result));
+                            AODBCmd1.saveCmdResult(rdata.getAllCommand(), Base64.encode2Str(result));
 						rdata.getCallObj().sendMessage(rdata);
 					} catch (Exception e) {
 						e.printStackTrace();
