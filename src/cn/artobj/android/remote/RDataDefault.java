@@ -150,6 +150,4 @@ public abstract class RDataDefault extends RData {
         }
     }
 
-
-
 }
