@@ -213,6 +213,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			}
 			remoteService.closeConn();
 		}
+
 	}
 	
 	

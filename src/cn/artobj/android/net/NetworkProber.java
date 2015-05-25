@@ -3,10 +3,8 @@ package cn.artobj.android.net;
 import java.net.InetAddress;
 import java.util.List;
 
-import cn.artwebs.socket.ClientTCP;
-import cn.artwebs.utils.HttpDownloader;
 
-
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,6 +14,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -170,6 +169,7 @@ public class NetworkProber {
     }  
     
     
+    @TargetApi(Build.VERSION_CODES.CUPCAKE)
     public static String getCurrentNetType(Context context) {
 		String type = "";
 		ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);

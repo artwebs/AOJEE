@@ -39,5 +39,6 @@ public class DefaultRemoteCallBack implements RemoteFactory.IRemoteCallBack  {
             Log.w(tag,err.getError());
         }
     }
+
 }
 
