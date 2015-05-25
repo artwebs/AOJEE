@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import cn.artobj.android.asyncimage.AsyncImageLoader;
-import cn.artobj.android.asyncimage.IAsyncImageLoader;
+import cn.artobj.android.asyncimageloader.AsyncImageLoader;
+import cn.artobj.android.asyncimageloader.IAsyncImageLoader;
 import cn.artobj.aoandroid.R;
 
 

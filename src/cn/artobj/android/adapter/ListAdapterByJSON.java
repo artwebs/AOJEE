@@ -3,6 +3,7 @@ package cn.artobj.android.adapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import cn.artobj.aoandroid.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,10 +16,6 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import cn.aoandroid.object.BinList;
-import cn.aoandroid.object.BinMap;
-
-import cn.aoandroid.R;
 
 public class ListAdapterByJSON extends BaseAdapter {
 	private final String tag="ListAdapterByJSON";
