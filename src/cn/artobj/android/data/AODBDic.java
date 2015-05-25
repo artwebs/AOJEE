@@ -7,9 +7,9 @@ import cn.artobj.android.application.AppDefault;
 import cn.artobj.json.JSONArray;
 import cn.artobj.object.AOList;
 
-public class AODBDic1 {
+public class AODBDic {
 	private final static String tag="RSTechDBDic";
-	private static DataBase1 db= AppDefault.getInstance().buildDataBase();
+	private static DataBase db= AppDefault.getInstance().buildDataBase();
 	
 	
 	public static void deleteAll()

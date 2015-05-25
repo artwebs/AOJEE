@@ -7,9 +7,9 @@ import cn.artwebs.object.BinList;
 import com.rstechbase.comm.RSTechApp;
 import org.json.JSONArray;
 
-public class RSTechDBDic1 {
+public class RSTechDBDic {
 	private final static String tag="RSTechDBDic";
-	private static DataBase1 db= RSTechApp.getInstance().buildDataBase();
+	private static DataBase db= RSTechApp.getInstance().buildDataBase();
 	
 	
 	public static void deleteAll()

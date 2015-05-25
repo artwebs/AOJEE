@@ -3,9 +3,9 @@ package cn.artobj.android.data;
 import android.database.sqlite.SQLiteDatabase;
 import cn.artobj.android.application.AppDefault;
 
-public class DataBase1 extends SQLite {
+public class DataBase extends SQLite {
 	
-	public DataBase1() {
+	public DataBase() {
 		super(AppDefault.getAppContext(), AppDefault.getAppName());
 		this.dbVersion=1;
 	}

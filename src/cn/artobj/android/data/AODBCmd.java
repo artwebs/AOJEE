@@ -3,9 +3,9 @@ package cn.artobj.android.data;
 import cn.artobj.android.application.AppDefault;
 import cn.artobj.object.AOList;
 
-public class AODBCmd1 {
+public class AODBCmd {
 	private final static String tag="ZCTechDBCmd";
-	private static DataBase1 db= AppDefault.getInstance().buildDataBase();
+	private static DataBase db= AppDefault.getInstance().buildDataBase();
 	
 	public static void deleteAll()
 	{
