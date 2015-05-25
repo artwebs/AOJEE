@@ -4,7 +4,7 @@ import android.util.Log;
 import cn.artobj.object.AOMap;
 import cn.artobj.security.AOSecurity3DES;
 import cn.artobj.utils.Base64;
-import cn.artobj.utils.ByteIntLong;
+import cn.artobj.utils.ByteIntLong1;
 import cn.artobj.utils.Utils;
 import org.apache.http.NameValuePair;
 import org.json.JSONException;
@@ -71,7 +71,7 @@ public abstract class RDataDefault extends RData {
         rsByte[2]=(byte)this.getPtlVersion();
         Log.w(tag, "数据大小=》" + len);
         Log.w(tag, "数据=》" + tmp);
-        System.arraycopy(ByteIntLong.bytesToHexString(ByteIntLong.getBytes(len, false)).getBytes(),0,rsByte,3,4);
+        System.arraycopy(ByteIntLong1.bytesToHexString(ByteIntLong1.getBytes(len, false)).getBytes(),0,rsByte,3,4);
 //        System.arraycopy(ByteIntLong.getBytes(len, false),0,rsByte,3,4);
         rsByte[7]=1;
         System.arraycopy(this.getCmdCode().getBytes(),0,rsByte,8,this.getCmdCode().length()>24?24:this.getCmdCode().length());
@@ -96,7 +96,7 @@ public abstract class RDataDefault extends RData {
             Log.w(tag, "系统类型=》" + source[0]);
             Log.w(tag, "终端类型=》" + source[1]);
             Log.w(tag, "协议版本=》" + source[2]);
-            int len = ByteIntLong.getInt(lenByte, true);
+            int len = ByteIntLong1.getInt(lenByte, true);
             Log.w(tag, "数据大小=》" + len);
             Log.w(tag, "数据类型=》" + source[7]);
             Log.w(tag, "调用接口=》" + new String(methodByte).trim());
