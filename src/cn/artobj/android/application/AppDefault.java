@@ -1,5 +1,6 @@
 package cn.artobj.android.application;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -20,10 +21,10 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.AudioManager;
 import android.preference.PreferenceManager;
-import android.telephony.TelephonyManager;
 import android.util.Log;
+import cn.artobj.android.data.DataBase;
 
-public class AppApplication extends Application {
+public abstract class AppDefault extends Application {
 	private final static String TAG="AgentApplication";
 	private List<Activity> activities = new ArrayList<Activity>();  
 	private String loginName="";
@@ -76,10 +77,10 @@ public class AppApplication extends Application {
     
     public static String getAppName()
 	{
-		return AppApplication.getPKG().applicationInfo.packageName.substring(AppApplication.getPKG().applicationInfo.packageName.lastIndexOf(".")+1);
+		return AppDefault.getPKG().applicationInfo.packageName.substring(AppDefault.getPKG().applicationInfo.packageName.lastIndexOf(".")+1);
 	}
     
-    private static AppApplication instance;
+    private static AppDefault instance;
 
     @Override
     public void onCreate() {
@@ -229,10 +230,29 @@ public class AppApplication extends Application {
 		editor.putString(key, value);
 		editor.commit();
 	}
-	
-	
-	
-   
+
+    public static AppDefault getInstance()
+    {
+        return (AppDefault) AppDefault.getAppContext();
+    }
+
+
+    public enum RTYPE{String,Layout,Drawable};
+    public static int getRID(RTYPE type,String name){
+        Field field;
+        int value = 0;
+        try {
+            Class<?> objClass = Class.forName(getAppContext().getPackageName()+".R$"+type.toString().toLowerCase());
+            field = objClass.getDeclaredField(name);
+            value = field.getInt(null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
+
+
+    public abstract DataBase buildDataBase();
 }
 
 

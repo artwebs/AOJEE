@@ -38,7 +38,7 @@ public class Phone{
 
 	private Phone()
 	{
-		TelephonyManager tm=((TelephonyManager) AppApplication.getAppContext().getSystemService(Context.TELEPHONY_SERVICE));
+		TelephonyManager tm=((TelephonyManager) AppDefault.getAppContext().getSystemService(Context.TELEPHONY_SERVICE));
 		imsi=tm.getSubscriberId();
 		imei=tm.getDeviceId();
 		msisdn=tm.getLine1Number();

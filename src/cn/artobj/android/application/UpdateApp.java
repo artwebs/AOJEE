@@ -6,11 +6,9 @@ import cn.artobj.utils.Utils;
 import org.json.JSONObject;
 
 import android.R;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -153,7 +151,7 @@ public class UpdateApp {
 					if(!android.os.Environment.getExternalStorageState().equals(
 							android.os.Environment.MEDIA_MOUNTED))
 					{
-						Toast.makeText(AppApplication.getAppContext(), "设备无SDCard，无法完成自动升级",Toast.LENGTH_LONG).show();
+						Toast.makeText(AppDefault.getAppContext(), "设备无SDCard，无法完成自动升级",Toast.LENGTH_LONG).show();
 						return;
 					}
 					downApk();
@@ -195,8 +193,8 @@ public class UpdateApp {
 	public static Version getLocalVersion()
     {
     	Version obj=new Version();
-    	obj.setAppName(AppApplication.getAppName());
-    	obj.setVersion(Long.valueOf(AppApplication.getPKG().versionCode));
+    	obj.setAppName(AppDefault.getAppName());
+    	obj.setVersion(Long.valueOf(AppDefault.getPKG().versionCode));
     	obj.setUpdateUrl("");
     	return obj;
     }
@@ -282,7 +280,7 @@ public class UpdateApp {
 			    	  break;
 		          case -1:
 		            String error = msg.getData().getString("error");
-		            Toast.makeText(AppApplication.getAppContext(), error,Toast.LENGTH_LONG).show();
+		            Toast.makeText(AppDefault.getAppContext(), error,Toast.LENGTH_LONG).show();
 		         
 		            break;
 		        }

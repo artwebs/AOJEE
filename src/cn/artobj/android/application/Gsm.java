@@ -19,7 +19,7 @@ public class Gsm {
 	
 	public static Gsm instance()
 	{
-		TelephonyManager tm=((TelephonyManager) AppApplication.getAppContext().getSystemService(Context.TELEPHONY_SERVICE));
+		TelephonyManager tm=((TelephonyManager) AppDefault.getAppContext().getSystemService(Context.TELEPHONY_SERVICE));
 		List<NeighboringCellInfo> infoLists = tm.getNeighboringCellInfo();  
 	    System.out.println("infoLists:"+infoLists+"     size:"+infoLists.size());  
 	    int l=0,c=0,b=0;

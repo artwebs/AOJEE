@@ -1,11 +1,8 @@
 package cn.artobj.android.application;
 
-import cn.artobj.aoandroid.R;
-
 public enum AlertStyle {
-	info("info", "提示", R.drawable.info), check("check", "校验",
-			R.drawable.check), warn("warn", "警告", R.drawable.warn), error(
-			"error", "错误", R.drawable.error);
+	info("info", "提示"), check("check", "校验"), warn("warn", "警告"), error(
+			"error", "错误");
 
 	String code;
 	String title;
@@ -23,11 +20,11 @@ public enum AlertStyle {
 		throw new IllegalArgumentException(code);
 	}
 
-	private AlertStyle(String code, String title, int ico)
+	private AlertStyle(String code, String title)
 	{
 		this.code = code;
 		this.title = title;
-		this.ico = ico;
+		this.ico =  AppDefault.getRID(AppDefault.RTYPE.Drawable, title);
 	}
 
 	public String getCode()
