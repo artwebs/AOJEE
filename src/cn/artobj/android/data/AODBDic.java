@@ -3,7 +3,7 @@ package cn.artobj.android.data;
 
 import android.content.ContentValues;
 import android.util.Log;
-import cn.artobj.android.application.AppDefault;
+import cn.artobj.android.app.AppDefault;
 import cn.artobj.json.JSONArray;
 import cn.artobj.object.AOList;
 

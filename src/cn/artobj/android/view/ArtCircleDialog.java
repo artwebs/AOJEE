@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
-import cn.artobj.android.application.DialogStyle;
+import cn.artobj.android.app.DialogStyle;
 
 public class ArtCircleDialog {
 	protected  ProgressDialog progressDialog = null;

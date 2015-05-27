@@ -1,4 +1,4 @@
-package cn.artobj.android.application;
+package cn.artobj.android.app;
 
 public class Version {
 	private long version;

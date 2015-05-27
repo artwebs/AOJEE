@@ -1,6 +1,6 @@
 package cn.artobj.android.data;
 
-import cn.artobj.android.application.AppDefault;
+import cn.artobj.android.app.AppDefault;
 import cn.artobj.object.AOList;
 
 public class AODBCmd {

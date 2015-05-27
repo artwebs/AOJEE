@@ -1,4 +1,4 @@
-package cn.artobj.android.application;
+package cn.artobj.android.app;
 
 import cn.artobj.android.utils.FileUtils;
 import cn.artobj.utils.HttpDownloader;

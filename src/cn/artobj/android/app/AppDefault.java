@@ -1,6 +1,5 @@
-package cn.artobj.android.application;
+package cn.artobj.android.app;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -236,20 +235,6 @@ public abstract class AppDefault extends Application {
         return (AppDefault) AppDefault.getAppContext();
     }
 
-
-    public enum RTYPE{String,Layout,Drawable};
-    public static int getRID(RTYPE type,String name){
-        Field field;
-        int value = 0;
-        try {
-            Class<?> objClass = Class.forName(getAppContext().getPackageName()+".R$"+type.toString().toLowerCase());
-            field = objClass.getDeclaredField(name);
-            value = field.getInt(null);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return value;
-    }
 
     public abstract DataBase buildDataBase();
 

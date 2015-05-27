@@ -13,7 +13,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
 import android.util.Log;
-import cn.artobj.android.application.AppDefault;
+import cn.artobj.android.app.AppDefault;
 
 public class FileUtils {
 	private static final String tag="FileUtils";

@@ -1,4 +1,4 @@
-package cn.artobj.android.application;
+package cn.artobj.android.app;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
