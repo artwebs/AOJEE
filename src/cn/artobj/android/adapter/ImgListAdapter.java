@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import cn.artobj.android.asyncimageloader.AsyncImageLoader;
 import cn.artobj.android.asyncimageloader.IAsyncImageLoader;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 
 
 public class ImgListAdapter extends ListAdapter {

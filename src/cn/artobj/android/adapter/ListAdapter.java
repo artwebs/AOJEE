@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 import cn.artobj.object.AOList;
 import cn.artobj.object.AOMap;
 

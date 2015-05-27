@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.widget.TableRow;
 import android.widget.TextView;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 import cn.artobj.object.AOMap;
 
 public abstract class SubmitItem {

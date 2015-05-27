@@ -32,7 +32,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 
 public class ArtCamera extends RelativeLayout {
 	private final static String tag="ArtCamera";

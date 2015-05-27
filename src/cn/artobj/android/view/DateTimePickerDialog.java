@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 
 public class DateTimePickerDialog implements  OnDateChangedListener,OnTimeChangedListener{
     private DatePicker datePicker;

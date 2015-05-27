@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.util.Log;
 import android.widget.Toast;
 import cn.artobj.android.utils.AndroidUtils;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 
 import java.util.concurrent.CountDownLatch;
 

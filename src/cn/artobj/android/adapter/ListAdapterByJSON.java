@@ -3,7 +3,7 @@ package cn.artobj.android.adapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

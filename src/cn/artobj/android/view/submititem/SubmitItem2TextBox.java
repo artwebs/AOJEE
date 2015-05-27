@@ -6,7 +6,7 @@ import android.widget.EditText;
 import android.widget.TableRow;
 import android.widget.TextView;
 import cn.artobj.android.utils.AndroidUtils;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 import cn.artobj.object.AOMap;
 
 public class SubmitItem2TextBox extends SubmitItem {

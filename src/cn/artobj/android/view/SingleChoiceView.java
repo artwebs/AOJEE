@@ -1,6 +1,6 @@
 package cn.artobj.android.view;
 
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 import cn.artobj.object.AOList;
 import org.json.JSONArray;
 import org.json.JSONException;

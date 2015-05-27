@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import cn.artobj.android.asyncimageloader.AsyncImageLoader;
 import cn.artobj.android.asyncimageloader.IAsyncImageLoader;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 import org.json.JSONArray;
 
 

@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import cn.artobj.aoandroid.R;
+import cn.artobj.R;
 import cn.artobj.object.AOList;
 
 public class ArtMenuView extends LinearLayout {
