@@ -43,7 +43,5 @@ public class ImgListAdapter extends ListAdapter {
 		rowViews.put(position, rowView);
 		return rowView;
 	}
-	
-	
 
 }
