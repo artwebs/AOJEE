@@ -5,13 +5,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TableRow;
 import android.widget.TextView;
-import cn.artobj.android.utils.AndroidUtils;
-import cn.artobj.R;
-import cn.artobj.object.AOMap;
+import cn.artwebs.R;
+import cn.artwebs.object.BinMap;
+import cn.artwebs.utils.AndroidUtils;
 
 public class SubmitItem2TextBox extends SubmitItem {
 	private EditText nameETxt;
-	public TableRow buildItem(Context context,AOMap paraRow)
+	public TableRow buildItem(Context context,BinMap paraRow)
 	{
 		TableRow rowLayout=super.buildItem(context, paraRow);
 		nameETxt=(EditText) rowLayout.findViewById(R.id.nameETxt);
@@ -21,7 +21,7 @@ public class SubmitItem2TextBox extends SubmitItem {
 		}
 		if(paraRow.containsKey("readonly"))
 		{
-			if("true".equals(paraRow.getValue("readonly").toString())) AndroidUtils.setEditTextReadOnly(nameETxt);
+			if("true".equals(paraRow.getValue("readonly").toString()))AndroidUtils.setEditTextReadOnly(nameETxt);
 		}
 		if(paraRow.containsKey("unit"))
 		{

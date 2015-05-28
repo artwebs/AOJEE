@@ -5,21 +5,23 @@ import android.util.AttributeSet;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import cn.artobj.android.view.submititem.SubmitItem;
-import cn.artobj.object.AOList;
-import cn.artobj.object.AOMap;
+import cn.artwebs.control.submititem.SubmitItem;
+import cn.artwebs.control.submititem.SubmitItem.ItemKey;
+import cn.artwebs.control.submititem.SubmitItem.ItemValueType;
+import cn.artwebs.object.BinList;
+import cn.artwebs.object.BinMap;
 
 import java.lang.reflect.Constructor;
 
 public class SubmitView extends ScrollView {
 	private Context context;
-	private AOList source;
-	private AOMap ctlMap;
+	private BinList source;
+	private BinMap ctlMap;
 	private TableLayout tblLayout;
     private SubmitItem.SubmitItemDelegate itemDelegate=null;
 	
 	
-	public void setSource(AOList source) {
+	public void setSource(BinList source) {
 		this.source = source;
 	}
 
@@ -36,7 +38,7 @@ public class SubmitView extends ScrollView {
 		super(context, attrs);
 		this.context=context;
 		
-		ctlMap=new AOMap();
+		ctlMap=new BinMap();
 		tblLayout=new TableLayout(this.context);
 		tblLayout.setColumnStretchable(1, true);
 		this.addView(tblLayout);
@@ -50,15 +52,15 @@ public class SubmitView extends ScrollView {
 			tblLayout.removeAllViews();
 			for(int i=0;i<source.size();i++)
 			{
-				AOMap map=new AOMap();
+				BinMap map=new BinMap();
 				map.setItemByHashMap(source.getItem(i));
 				
 				
 				SubmitItem itemObj=getItemObj(map);
 				TableRow rowLayout=itemObj.buildItem(context, map);
-				ctlMap.put(map.getValue(SubmitItem.ItemKey.name.toString()).toString(), itemObj);
-				if(map.containsKey(SubmitItem.ItemKey.display.toString()))
-					if("false".equals(map.getValue(SubmitItem.ItemKey.display.toString())))continue;
+				ctlMap.put(map.getValue(ItemKey.name.toString()).toString(), itemObj);
+				if(map.containsKey(ItemKey.display.toString()))
+					if("false".equals(map.getValue(ItemKey.display.toString())))continue;
 				tblLayout.addView(rowLayout);
 			}
 			
@@ -66,24 +68,24 @@ public class SubmitView extends ScrollView {
 		
 	}
 	
-	private SubmitItem getItemObj(AOMap map)
+	private SubmitItem getItemObj(BinMap map)
 	{
-		String type= SubmitItem.ItemValueType.textBox.toString();
-		if(map.containsKey(SubmitItem.ItemKey.type.toString()))
+		String type=ItemValueType.textBox.toString();
+		if(map.containsKey(ItemKey.type.toString()))
 		{
-			type=map.getValue(SubmitItem.ItemKey.type.toString()).toString();
+			type=map.getValue(ItemKey.type.toString()).toString();
 		}
 		
 		Class<SubmitItem> objclass=null;
 		SubmitItem itemobj=null;
 		try{
-			objclass=(Class<SubmitItem>)Class.forName("cn.aoandroid.control.submititem.SubmitItem2"+type.substring(0,1).toUpperCase()+type.substring(1));
+			objclass=(Class<SubmitItem>)Class.forName("cn.artwebs.control.submititem.SubmitItem2"+type.substring(0,1).toUpperCase()+type.substring(1));
 			Constructor constructor = objclass.getConstructor(); 
 			itemobj=(SubmitItem)constructor.newInstance();
 		}catch(Exception e)
 		{
 			try {
-				objclass=(Class<SubmitItem>)Class.forName("cn.aoandroid.control.submititem.SubmitItem2TextBox");
+				objclass=(Class<SubmitItem>)Class.forName("cn.artwebs.control.submititem.SubmitItem2TextBox");
 				Constructor constructor = objclass.getConstructor(); 
 				itemobj=(SubmitItem)constructor.newInstance();
 			} catch (Exception e1) {
@@ -95,19 +97,19 @@ public class SubmitView extends ScrollView {
 	}
 	
 	
-	public static void buildData(AOList para,AOList data ,int index)
+	public static void buildData(BinList para,BinList data ,int index)
 	{
 		if(data==null)return;
 		if(index>data.size())return;
-		AOMap mapData=new AOMap();
+		BinMap mapData=new BinMap();
 		mapData.setItemByHashMap(data.getItem(index));
 		for(int i=0;i<para.size();i++)
 		{
 			for(int j=0;j<mapData.size();j++)
 			{
-				if(para.getValue(i, SubmitItem.ItemKey.name.toString()).equals(mapData.getKey(j)))
+				if(para.getValue(i, ItemKey.name.toString()).equals(mapData.getKey(j)))
 				{
-					para.put(i, SubmitItem.ItemKey.value.toString(), mapData.getValue(j));
+					para.put(i, ItemKey.value.toString(), mapData.getValue(j));
 					mapData.remove(j);
 					continue;
 				}
@@ -117,7 +119,7 @@ public class SubmitView extends ScrollView {
 	}
 	
 	public boolean isChanged() {
-		AOMap rsMap=new AOMap();
+		BinMap rsMap=new BinMap();
 		boolean isChanged=false;
 		for(int i=0;i<ctlMap.size();i++)
 		{
@@ -128,9 +130,9 @@ public class SubmitView extends ScrollView {
 	}
 	
 	
-	public AOMap getResult()
+	public BinMap getResult()
 	{
-		AOMap rsMap=new AOMap();
+		BinMap rsMap=new BinMap();
 		for(int i=0;i<ctlMap.size();i++)
 		{
 			SubmitItem item=(SubmitItem) ctlMap.getValue(i);
@@ -139,9 +141,9 @@ public class SubmitView extends ScrollView {
 		return rsMap;
 	}
 	
-	public AOMap getResult(boolean isChanged)
+	public BinMap getResult(boolean isChanged)
 	{
-		AOMap rsMap=new AOMap();
+		BinMap rsMap=new BinMap();
 		for(int i=0;i<ctlMap.size();i++)
 		{
 			SubmitItem item=(SubmitItem) ctlMap.getValue(i);

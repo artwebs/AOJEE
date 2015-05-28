@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/titleView"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -22,7 +22,7 @@
         android:layout_alignParentRight="true"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_below="@+id/titleView" >
+        android:layout_below="@+id/titleTextView" >
 
         <RadioButton
             android:id="@+id/radio0"

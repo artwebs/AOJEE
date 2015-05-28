@@ -96,7 +96,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			}
         } catch (Exception e) {
             e.printStackTrace();
-            Log.d(tag, ERROR.NO_INTERENT_PERMISSION.getError());
+            Log.d(tag,ERROR.NO_INTERENT_PERMISSION.getError());
 			if(dialog!=null)
 				dialog.close();
             if(this.iRCallObj!=null)
@@ -153,13 +153,20 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 		public void doRmote(RData rdata,IService remoteService)
 		{
 			byte[] result = null;
+			boolean isSave=false;
 			if(rdata.isCache())
 			{
                 String cacheStr= null;
                 try {
-                    result= Base64.decode2Byte(AODBCmd.queryCmdResult(rdata.getAllCommand()));
-					Log.w(tag,"使用缓存数据:"+rdata.getAllCommand());
+					cacheStr=AODBCmd.queryCmdResult(rdata.getCmdCode() +rdata.getAllCommand());
+                    if(cacheStr!=null){
+						result= Base64.decode2Byte(AODBCmd.queryCmdResult(rdata.getCmdCode() + rdata.getAllCommand()));
+						Log.w(tag,"使用缓存数据:"+rdata.getCmdCode() +rdata.getParams());
+					}else{
+						Log.w(tag,"无缓存数据:"+rdata.getCmdCode() +rdata.getParams());
+					}
                 } catch (Exception e) {
+					result=null;
                     e.printStackTrace();
                 }finally {
 
@@ -170,7 +177,8 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			if(result==null)
 			try {
                 result=remoteService.invoke(rdata);
-				Log.w(tag,"请求数据:"+rdata.getAllCommand());
+				Log.w(tag,"请求数据:"+rdata.getCmdCode() +rdata.getParams());
+				isSave=true;
 			} catch (ServiceException e) {
                 rdata.getResponse().setReqError(e);
 				// TODO Auto-generated catch block
@@ -182,8 +190,8 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
                     rdata.getResponse().setSource(result);
 				if(rdata.getCallObj()!=null)
 					try {
-                        if(rdata.isCache()&&rdata.getResponse().succeed())
-                            AODBCmd.saveCmdResult(rdata.getAllCommand(), Base64.encode2Str(result));
+                        if(isSave&&rdata.isCache()&&rdata.getResponse().succeed())
+                            AODBCmd.saveCmdResult(rdata.getCmdCode()+rdata.getAllCommand(), Base64.encode2Str(result));
 						rdata.getCallObj().sendMessage(rdata);
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -213,7 +221,6 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			}
 			remoteService.closeConn();
 		}
-
 	}
 	
 	

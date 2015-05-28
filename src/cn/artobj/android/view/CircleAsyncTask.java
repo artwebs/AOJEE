@@ -1,9 +1,13 @@
 package cn.artobj.android.view;
 
+import cn.artwebs.object.BinMap;
+import cn.artwebs.utils.AndroidUtils;
 
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.os.AsyncTask;
+import android.widget.ProgressBar;
 
 public abstract class CircleAsyncTask extends BaseAsyncTask {
 	private ProgressDialog progressDialog=null;

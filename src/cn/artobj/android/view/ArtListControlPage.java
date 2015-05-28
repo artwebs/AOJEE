@@ -4,25 +4,24 @@ import android.app.Activity;
 import android.util.Log;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
-import android.widget.Toast;
 import cn.artobj.android.adapter.ListAdapter;
 import cn.artobj.object.AOList;
+import android.widget.Toast;
 
 public class ArtListControlPage implements OnScrollListener {
 	private final static String tag="ArtListViewPage";
-	private AOList list=new AOList();
-	private  Activity window;
-	private ListAdapter adapter;
-	private int page=1;
-	private int pageSize=10;
-	private int visibleLastIndex = 0;  
-	private int visibleItemCount=0;  
-	private int dataSize=0;
-	private OnControlPageListener listener;
-	
-	public AOList getList() {
-		return list;
-	}
+	protected Activity window;
+	protected AOList list=new AOList();
+	protected ListAdapter adapter;
+	protected int page=1;
+	protected int pageSize=10;
+	protected int dataSize=-1;
+
+	protected boolean isLastRow = false;
+	protected int lastPage =0;
+
+	protected OnControlPageListener listener;
+
 
 	public void setDataSize(int dataSize) {
 		this.dataSize = dataSize;
@@ -46,8 +45,6 @@ public class ArtListControlPage implements OnScrollListener {
 		this.adapter.clearItem();
 		page=1;
 		setDataSize(pageSize);
-		visibleLastIndex = 0;
-		visibleItemCount=0;
 		list.clear();
 		loadData();
 	}
@@ -61,55 +58,64 @@ public class ArtListControlPage implements OnScrollListener {
 	@Override
 	public void onScroll(AbsListView view, int firstVisibleItem,
 			int visibleItemCount, int totalItemCount) {
-		this.visibleItemCount = visibleItemCount;  
-        visibleLastIndex = firstVisibleItem + visibleItemCount;    
-        if(totalItemCount == list.size()+1){  
-//	            listView.removeFooterView(loadMoreLayout);  
-            Toast.makeText(window, "加载完成", Toast.LENGTH_LONG).show();  
-        }  
+
+
+		if (!isLastRow&&firstVisibleItem + visibleItemCount == totalItemCount && totalItemCount > 0 ) {
+			isLastRow = true;
+		}
+
+		if(dataSize!=-1&&dataSize<=totalItemCount){
+			finishLoadData();
+			isLastRow=false;
+		}
+
+	}
+
+	protected void finishLoadData(){
+		Toast.makeText(window, "加载完成", Toast.LENGTH_LONG).show();
 	}
 
 	@Override
 	public void onScrollStateChanged(AbsListView view, int scrollState) {
-		Log.d(tag, "onScrollStateChanged");
-		int itemsLastIndex = adapter.getCount()-1;    
-        int lastIndex = itemsLastIndex + 1;  
-        Log.d(tag, (scrollState == OnScrollListener.SCROLL_STATE_TOUCH_SCROLL )+"");
-        Log.d(tag, (visibleLastIndex == lastIndex )+"");
-        Log.d(tag, (adapter.getCount()<dataSize-1)+"");
-        Log.d(tag, "------------------------");
-        if (scrollState == OnScrollListener.SCROLL_STATE_TOUCH_SCROLL  
-                && visibleLastIndex == lastIndex &&adapter.getCount()<dataSize-1) { 
-        	Log.d(tag, "loadMoreData");
-        	loadData();
-        }  
+//		Log.e(tag, "onScrollStateChanged");
+		if (lastPage !=page&&isLastRow && scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
+			//加载元素
+			loadData();
+			isLastRow = false;
+			lastPage =page;
+		}
 	}
 	
-	private void loadData()
+	protected void loadData()
 	{
 		if(listener==null)
         {
-			setDataSize(0);
+			setDataSize(-1);
         	Log.d(tag, "listener 没有设置");
         	return;
         }
 		listener.loadMoreData(page,pageSize);
 	}
 	
-	public void notifyDataChanged(AOList tmpList)
+	public synchronized void notifyDataChanged(AOList tmpList)
 	{
 		if(tmpList.size()>0)
     	{
-    		list.addend(tmpList);
+			list.addend(tmpList);
     		window.runOnUiThread(new Runnable() {
 				@Override
-				public void run() {
+				public synchronized void run() {
 					adapter.notifyDataSetChanged();
+					if(dataSize!=-1&&dataSize<=adapter.getCount()){
+						finishLoadData();
+						isLastRow=false;
+					}
 				}
 			});
-    		dataSize+=tmpList.size();
     		page++;
     	}
+
+
 	}
 
 	public interface OnControlPageListener
