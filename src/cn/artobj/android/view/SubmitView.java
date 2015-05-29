@@ -77,13 +77,13 @@ public class SubmitView extends ScrollView {
 		Class<SubmitItem> objclass=null;
 		SubmitItem itemobj=null;
 		try{
-			objclass=(Class<SubmitItem>)Class.forName("cn.artwebs.control.submititem.SubmitItem2"+type.substring(0,1).toUpperCase()+type.substring(1));
+			objclass=(Class<SubmitItem>)Class.forName("cn.artobj.android.view.submititem.SubmitItem2"+type.substring(0,1).toUpperCase()+type.substring(1));
 			Constructor constructor = objclass.getConstructor(); 
 			itemobj=(SubmitItem)constructor.newInstance();
 		}catch(Exception e)
 		{
 			try {
-				objclass=(Class<SubmitItem>)Class.forName("cn.artwebs.control.submititem.SubmitItem2TextBox");
+				objclass=(Class<SubmitItem>)Class.forName("cn.artobj.android.view.submititem.SubmitItem2TextBox");
 				Constructor constructor = objclass.getConstructor(); 
 				itemobj=(SubmitItem)constructor.newInstance();
 			} catch (Exception e1) {
