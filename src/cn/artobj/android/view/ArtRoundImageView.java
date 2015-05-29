@@ -5,7 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.*;
 import android.util.AttributeSet;
 import android.widget.ImageView;
-import cn.artwebs.R;
+import cn.artobj.R;
 
 /**
  * Created by rsmac on 15/2/10.

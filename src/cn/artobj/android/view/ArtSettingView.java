@@ -10,15 +10,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import cn.artwebs.R;
-import cn.artwebs.comm.AppApplication;
-import cn.artwebs.object.BinList;
+import cn.artobj.R;
+import cn.artobj.android.app.AppDefault;
+import cn.artobj.object.AOList;
 
 /**
  * Created by rsmac on 15/3/13.
  */
 public class ArtSettingView extends LinearLayout {
-    private BinList list=new BinList();
+    private AOList list=new AOList();
     private Context context;
     private final static String fieldIco ="ico";
     private final static String fieldTitle ="title";
@@ -38,7 +38,7 @@ public class ArtSettingView extends LinearLayout {
     public void reloadView(){
         this.removeAllViews();
         for(int i=0;i<list.size();i++){
-            LayoutInflater inflater= LayoutInflater.from(AppApplication.getAppContext());
+            LayoutInflater inflater= LayoutInflater.from(AppDefault.getAppContext());
             View view = (View) inflater.inflate(R.layout.artsettingitem,null);
             LinearLayout titleLayout= (LinearLayout) view.findViewById(R.id.titleLayout);
             ImageView icoImageView= (ImageView) view.findViewById(R.id.icoImageView);

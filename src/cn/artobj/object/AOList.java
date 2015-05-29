@@ -33,14 +33,8 @@ public class AOList extends IObject {
     {
         try {
             for (int i = 0; i <array.length() ; i++) {
-                boolean isStart=false;
                 JSONObject json=array.getJSONObject(i);
-                Iterator<?> it = json.keys();
-                while(it.hasNext()){
-                    String key= (String) it.next();
-                    put(isStart,key,json.getString(key));
-                    if(!isStart)isStart=true;
-                }
+				appendFromJSONObject(json);
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -50,6 +44,23 @@ public class AOList extends IObject {
         return this;
 
     }
+
+	public AOList appendFromJSONObject(JSONObject json){
+		boolean isStart=false;
+		Iterator<?> it = json.keys();
+		while(it.hasNext()){
+			String key= (String) it.next();
+			try {
+				put(isStart,key,json.getString(key));
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}finally {
+
+			}
+			if(!isStart)isStart=true;
+		}
+		return this;
+	}
 
 	public JSONArray getArray2JSONArray()
 	{
@@ -80,7 +91,7 @@ public class AOList extends IObject {
 	public Object getValue(int i,Object key) {
 		Object value=new Object();
 		HashMap hm=(HashMap)item.get(i);
-		Iterator it= hm.keySet().iterator();
+		Iterator it= hm.keySet().iterator();			
 		while(it.hasNext())
 		{			
 			  Object tempkey=(Object)it.next();
@@ -98,7 +109,7 @@ public class AOList extends IObject {
 	
 	public void setValue(int i,Object key,Object value){
 		HashMap hm=(HashMap)item.get(i);
-		Iterator it= hm.keySet().iterator();
+		Iterator it= hm.keySet().iterator();			
 		while(it.hasNext())
 		{			
 			  Object tempkey=(Object)it.next();
@@ -113,7 +124,7 @@ public class AOList extends IObject {
 	public ArrayList getItemKeys() {
 		ArrayList rs=new ArrayList();
 		HashMap hm=(HashMap)item.get(0);
-		Iterator it= hm.keySet().iterator();
+		Iterator it= hm.keySet().iterator();			
 		while(it.hasNext())
 		{			
 			Object key=(Object)it.next();
@@ -125,7 +136,7 @@ public class AOList extends IObject {
 	public ArrayList getItemValues(int index) {
 		ArrayList rs=new ArrayList();
 		HashMap hm=(HashMap)item.get(index);
-		Iterator it= hm.keySet().iterator();
+		Iterator it= hm.keySet().iterator();			
 		while(it.hasNext())
 		{
 			
@@ -211,6 +222,18 @@ public class AOList extends IObject {
 		}
 		return Flage;
 	}
+
+	public boolean containsKey(int index,Object key)
+	{
+		boolean Flage=false;
+		if(index<item.size())
+		{
+			if(((HashMap)item.get(index)).containsKey(key))
+				Flage=true;
+		}
+		return Flage;
+	}
+
 	public boolean containsValue(Object value)
 	{
 		boolean Flage=false;

@@ -116,6 +116,26 @@ public abstract class SQLite{
 		
 		return flag;
 	}
+
+
+	public boolean insertMult(String table, String nullColumnHack, ContentValues values)
+	{
+		boolean flag=false;
+		this.connection();
+		this.db.beginTransaction();
+		try
+		{
+			this.db.insert(table, nullColumnHack, values);
+			this.db.setTransactionSuccessful();
+			flag=true;
+		}
+		finally
+		{
+			this.db.endTransaction();
+		}
+		return flag;
+	}
+
 	
 	public boolean delete(String table, String whereClause, String[] whereArgs) 
 	{

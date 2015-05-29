@@ -1,10 +1,10 @@
 package cn.artobj.android.view;
 
-import cn.artwebs.R;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
+import cn.artobj.R;
 
 public class CustomProgressDialog extends ProgressDialog {
 	  public CustomProgressDialog(Context context) {

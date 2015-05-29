@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import cn.artobj.R;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import cn.artobj.json.JSONArray;
+import cn.artobj.json.JSONException;
+import cn.artobj.json.JSONObject;
 
 import android.app.Activity;
 import android.util.Log;

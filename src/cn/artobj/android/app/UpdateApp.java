@@ -3,7 +3,7 @@ package cn.artobj.android.app;
 import cn.artobj.android.utils.FileUtils;
 import cn.artobj.utils.HttpDownloader;
 import cn.artobj.utils.Utils;
-import org.json.JSONObject;
+import cn.artobj.json.JSONObject;
 
 import android.R;
 import android.app.AlertDialog;

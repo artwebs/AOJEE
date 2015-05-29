@@ -1,5 +1,5 @@
 package cn.artobj.android.app;
 
-public final class C {
+public class C {
 
 }

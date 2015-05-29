@@ -8,9 +8,9 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.ListView;
+import cn.artobj.R;
 import cn.artobj.android.adapter.ListAdapter;
 import cn.artobj.android.app.AppDefault;
-import cn.softwaredata.rsaggie.R;
 
 public class ArtListControlViewPage extends ArtListControlPage {
 	private final String tag="ArtListControlViewPage";

@@ -2,33 +2,32 @@ package cn.artobj.android.view;
 
 import android.content.Context;
 import android.os.AsyncTask;
-
-import cn.artwebs.object.BinMap;
-import cn.artwebs.utils.AndroidUtils;
+import cn.artobj.android.utils.AndroidUtils;
+import cn.artobj.object.AOMap;
 
 
 public abstract class BaseAsyncTask {
 	protected Context context;
-	protected AsyncTask<Void,Void,BinMap> task=new AsyncTask<Void,Void,BinMap>(){
+	protected AsyncTask<Void,Void,AOMap> task=new AsyncTask<Void,Void,AOMap>(){
 
 		@Override
-		protected BinMap doInBackground(Void... params) {
+		protected AOMap doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 			return doRun();
 		}
 		@Override
-		protected void onPostExecute(BinMap result) {
+		protected void onPostExecute(AOMap result) {
 			// TODO Auto-generated method stub
 			super.onPostExecute(result);	
 			doUpdate(result);
 		}
 	};
 	
-	public abstract BinMap  doRun();
+	public abstract AOMap  doRun();
 	
-	public void  doUpdate(BinMap result)
+	public void  doUpdate(AOMap result)
 	{
-		AndroidUtils.commDialog(context, "",result.getValue("message").toString());
+		AndroidUtils.commDialog(context, "", result.getValue("message").toString());
 		this.hide();
 	}
 	

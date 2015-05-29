@@ -1,8 +1,8 @@
 package cn.artobj.android.remote;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import cn.artobj.json.JSONArray;
+import cn.artobj.json.JSONException;
+import cn.artobj.json.JSONObject;
 
 public abstract class RemoteResponse {
 	public abstract void setSource(byte[] source);

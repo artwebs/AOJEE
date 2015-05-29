@@ -1,7 +1,6 @@
 package cn.artobj.object;
 
 
-
 import cn.artobj.json.JSONException;
 import cn.artobj.json.JSONObject;
 
@@ -26,7 +25,7 @@ public class AOMap extends IObject {
 		}
 		return this;
 	}
-	public Object getKey(int i) {
+	public Object getKey(int i) {		
 		HashMap hm=(HashMap)item.get(i);
 		Iterator it= hm.keySet().iterator();
 		Object key=new Object();
@@ -44,11 +43,11 @@ public class AOMap extends IObject {
 	}
 	
 	public Object getKey(Object value) {
-		Object key=new Object();
+		Object key=new Object(); 
 		for(int i=0;i<item.size();i++)
 		{
 		  HashMap hm=(HashMap)item.get(i);
-		  Iterator it= hm.keySet().iterator();
+		  Iterator it= hm.keySet().iterator();			
 		  while(it.hasNext())
 		  {			
 			  Object tempkey=(Object)it.next();
@@ -100,7 +99,7 @@ public class AOMap extends IObject {
 		for(int i=0;i<item.size();i++)
 		{
 		  HashMap hm=(HashMap)item.get(i);
-		  Iterator it= hm.keySet().iterator();
+		  Iterator it= hm.keySet().iterator();			
 		  while(it.hasNext())
 		  {			
 			  Object tempkey=(Object)it.next();
@@ -120,7 +119,7 @@ public class AOMap extends IObject {
 		for(int i=0;i<item.size();i++)
 		{
 		  HashMap hm=(HashMap)item.get(i);
-		  Iterator it= hm.keySet().iterator();
+		  Iterator it= hm.keySet().iterator();			
 		  while(it.hasNext())
 		  {			
 			  Object tempkey=(Object)it.next();
@@ -135,7 +134,7 @@ public class AOMap extends IObject {
 	public void setValue(int index,Object value){
 
 		  HashMap hm=(HashMap)item.get(index);
-		  Iterator it= hm.keySet().iterator();
+		  Iterator it= hm.keySet().iterator();			
 		  while(it.hasNext())
 		  {			
 			  Object tempkey=(Object)it.next();
@@ -176,7 +175,7 @@ public class AOMap extends IObject {
 		for(int i=0;i<item.size();i++)
 		{
 		  HashMap hm=(HashMap)item.get(i);
-		  Iterator it= hm.keySet().iterator();
+		  Iterator it= hm.keySet().iterator();			
 		  while(it.hasNext())
 		  {			
 			  Object tempkey=(Object)it.next();
@@ -230,7 +229,7 @@ public class AOMap extends IObject {
 		for(int i=0;i<this.item.size();i++)
 		{
 			  HashMap hm=(HashMap)item.get(i);
-			  Iterator it= hm.keySet().iterator();
+			  Iterator it= hm.keySet().iterator();	
 			   Object key=new Object();
 				Object value=new Object();
 				while(it.hasNext())

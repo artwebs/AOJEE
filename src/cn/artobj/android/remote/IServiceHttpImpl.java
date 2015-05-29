@@ -67,7 +67,7 @@ public class IServiceHttpImpl implements IService {
 	}
 	
 	/* (non-Javadoc)
-	 * @see com.rstechbase.remote.IService#invoke(com.rstechbase.remote.RData)
+	 * @see cn.softwaredata.rstechbase.remote.IService#invoke(cn.softwaredata.rstechbase.remote.RData)
 	 */
 	@Override
 	public  byte[] invoke(RData data) throws ServiceException
@@ -201,7 +201,7 @@ public class IServiceHttpImpl implements IService {
 		//关闭Nagle算法,数据不作缓冲，立即发送
 		HttpConnectionParams.setTcpNoDelay(this.ConnectionParams, true);
 		//等于0表示socket关闭时，立即释放资源
-		HttpConnectionParams.setLinger(this.ConnectionParams,0);		
+		HttpConnectionParams.setLinger(this.ConnectionParams,0);
 		
 		SchemeRegistry schemeReg = new SchemeRegistry();
 		//设置HttpClient支持HTTP和HTTPS两种模式

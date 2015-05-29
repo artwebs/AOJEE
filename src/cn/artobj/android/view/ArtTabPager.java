@@ -11,10 +11,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.*;
-import cn.artwebs.ListAdapter.ListAdapter;
-import cn.artwebs.ListAdapter.ListAdapterDefault;
-import cn.artwebs.R;
-import cn.artwebs.object.BinList;
+import cn.artobj.R;
+import cn.artobj.android.adapter.ListAdapter;
+import cn.artobj.android.adapter.ListAdapterDefault;
+import cn.artobj.object.AOList;
 
 import java.util.HashMap;
 
@@ -22,7 +22,7 @@ import java.util.HashMap;
  * Created by rsmac on 15/2/11.
  */
 public class ArtTabPager extends RelativeLayout {
-    private BinList list=new BinList();
+    private AOList list=new AOList();
     private Context context;
     private ViewPager tabPager;
     private GridView tabGridView;

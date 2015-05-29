@@ -7,9 +7,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import cn.artobj.object.AOMap;
+import cn.artobj.object.AOObject;
 
 
-public class DbUtil extends AOMap {
+public class DbUtil extends AOObject {
 	public AOMap getNoExKey(AOMap para) {
 		AOMap rsLm=this.getNoExKey(para);
 		return rsLm;

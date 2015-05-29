@@ -1,5 +1,8 @@
 package cn.artobj.utils;
 
+import cn.artobj.json.JSONArray;
+import cn.artobj.json.JSONException;
+import cn.artobj.json.JSONObject;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
@@ -425,6 +428,33 @@ public class Utils {
         {
             return true;
         }
+    }
+
+
+    public static String getJSONString(JSONObject josn,String key){
+        return getJSONString(josn, key, "");
+    }
+
+    public static String getJSONString(JSONObject josn,String key,String defaultValue){
+        try {
+            return josn.getString(key);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }finally {
+        }
+        return defaultValue;
+    }
+
+    public static JSONArray getJSONArray(JSONObject json,String key){
+        try {
+            return new JSONArray(json.getString(key));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }finally {
+
+        }
+        return new JSONArray();
+
     }
 
 }

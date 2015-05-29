@@ -7,16 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import cn.artobj.R;
+import cn.artobj.json.JSONObject;
 import cn.artobj.object.AOList;
 import cn.artobj.object.AOMap;
+import cn.artobj.utils.Utils;
 
-public class ListAdapter extends BaseAdapter {
+public abstract class ListAdapter<T extends ListAdapter.ViewHolder> extends BaseAdapter {
 	private final String tag="ListAdapter";
-	protected HashMap<Integer,View> rowViews=new HashMap<Integer,View>();
 	protected AOMap para=new AOMap();
 	protected AOList list=new AOList();
 	protected Activity activity=null;
@@ -51,13 +49,11 @@ public class ListAdapter extends BaseAdapter {
 	public void clearItem()
 	{
 		this.list.clear();
-		rowViews.clear();
 	}
 	
 	public void removeItem(int index)
 	{
 		this.list.remove(index);
-		rowViews.remove(index);
 	}
 	
 	public int getDataSize() {
@@ -82,13 +78,57 @@ public class ListAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		View rowView=rowViews.get(position);
-		rowView=(LinearLayout)this.activity.getLayoutInflater().inflate(R.layout.binlistitem, null);
-		TextView firstView=(TextView)rowView.findViewById(R.id.first);
-		firstView.setMaxLines(2);
-		HashMap<Object, Object> row=(HashMap<Object, Object>)this.getItem(position);
-		firstView.setText(row.get("text").toString());
-		rowViews.put(position, rowView);
-		return rowView;
+		T obj;
+		if(convertView==null){
+			convertView=initLayout(initLayoutID());
+			obj=initViewHolder();
+			convertView.setTag(obj);
+		}else {
+			obj= (T) convertView.getTag();
+		}
+		obj.setMap((HashMap) this.getItem(position));
+		updateUI(convertView, obj);
+		return convertView;
 	}
+
+	public abstract int initLayoutID();
+	public abstract T initViewHolder();
+
+	public View initLayout(int layoutid){
+		return this.activity.getLayoutInflater().inflate(layoutid, null);
+	}
+
+
+	public abstract void updateUI(View convertView,T obj);
+
+	public class ViewHolder{
+		private HashMap map;
+
+		public String getString(String key){
+			return Utils.getJSONString(getJson(), key);
+		}
+
+		public AOList getList(String key){
+			return  new AOList().appendFromJSONArray(Utils.getJSONArray(getJson(),key));
+		}
+
+		public JSONObject getJson() {
+			return new AOMap().setItemByHashMap(this.map).toJSONObject();
+		}
+
+
+		public void setMap(HashMap map){
+			this.map=map;
+		}
+
+		public void setValue(String key,Object value){
+			if(this.map!=null){
+				this.map.put(key,value);
+			}
+		}
+
+
+
+	}
+
 }

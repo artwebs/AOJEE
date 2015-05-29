@@ -1,11 +1,11 @@
 package cn.artobj.android.data;
 
+import cn.artwebs.object.BinList;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.test.AndroidTestCase;
 import android.util.Log;
-import cn.artobj.object.AOList;
 
 public class SQLiteTest extends AndroidTestCase {
 	private final static String tag="SQLiteTest";
@@ -34,7 +34,7 @@ public class SQLiteTest extends AndroidTestCase {
 		Db db=new Db(this.getContext());
 		db.execute("insert into person(name, age) values(?,?)",new Object[]{"张三",30});
 		db.execute("insert into person(name, age) values(?,?)",new Object[]{"李四",30});
-		AOList list=db.query("select personid,age,name from person", null);
+		BinList list=db.query("select personid,age,name from person", null);
 		Log.d(tag,list.getItem().toString());
 		
 	}

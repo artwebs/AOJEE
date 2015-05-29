@@ -73,7 +73,7 @@ public class Test {
     	Obj obj = new Obj("A beany object", 42, true);
         
         try {     
-            j = XML.toJSONObject("<![CDATA[This is a collection of test patterns and examples for org.json.]]>  Ignore the stuff past the end.  ");
+            j = XML.toJSONObject("<![CDATA[This is a collection of test patterns and examples for cn.artobj.json.]]>  Ignore the stuff past the end.  ");
             System.out.println(j.toString());
 
             s = "{     \"list of lists\" : [         [1, 2, 3],         [4, 5, 6],     ] }";

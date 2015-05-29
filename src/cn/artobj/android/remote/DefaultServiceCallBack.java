@@ -3,8 +3,8 @@ package cn.artobj.android.remote;
 import android.app.Activity;
 import android.util.Log;
 import android.widget.Toast;
-import cn.artobj.android.utils.AndroidUtils;
 import cn.artobj.R;
+import cn.artobj.android.utils.AndroidUtils;
 
 import java.util.concurrent.CountDownLatch;
 

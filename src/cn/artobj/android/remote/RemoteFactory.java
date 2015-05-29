@@ -158,7 +158,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			{
                 String cacheStr= null;
                 try {
-					cacheStr=AODBCmd.queryCmdResult(rdata.getCmdCode() +rdata.getAllCommand());
+					cacheStr= AODBCmd.queryCmdResult(rdata.getCmdCode() + rdata.getAllCommand());
                     if(cacheStr!=null){
 						result= Base64.decode2Byte(AODBCmd.queryCmdResult(rdata.getCmdCode() + rdata.getAllCommand()));
 						Log.w(tag,"使用缓存数据:"+rdata.getCmdCode() +rdata.getParams());

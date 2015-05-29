@@ -7,7 +7,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import cn.artwebs.R;
+import cn.artobj.R;
 
 /**
  * Created by rsmac on 15/5/6.

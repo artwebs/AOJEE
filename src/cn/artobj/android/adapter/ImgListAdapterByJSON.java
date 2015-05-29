@@ -4,10 +4,7 @@ import java.util.HashMap;
 
 import cn.artobj.android.asyncimageloader.AsyncImageLoader;
 import cn.artobj.android.asyncimageloader.IAsyncImageLoader;
-import cn.artobj.R;
-import org.json.JSONArray;
-
-
+import cn.artobj.json.JSONArray;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -17,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import cn.artobj.R;
 
 
 
