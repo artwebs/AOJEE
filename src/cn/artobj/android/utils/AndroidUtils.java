@@ -5,13 +5,25 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import cn.artobj.android.app.AppDefault;
+import cn.artobj.android.transmit.ITransmit;
+import cn.artobj.utils.Base64;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class AndroidUtils {
@@ -106,6 +118,63 @@ public class AndroidUtils {
             public void afterTextChanged(Editable s) {
             }
         });
+    }
+
+
+    public static Drawable loadImageFromUrl(String imageUrl) {
+        return loadImageFromUrl(null,imageUrl);
+    }
+
+    //该方法用于根据图片的URL，从网络上下载图片
+    public static Drawable loadImageFromUrl(ITransmit trans, String imageUrl) {
+        return loadImageFromUrl(trans,imageUrl,-1);
+    }
+
+    public static Drawable loadImageFromUrl(String imageUrl,int quality)
+    {
+        return loadImageFromUrl(null,imageUrl, quality);
+    }
+
+    //该方法用于根据图片的URL，从网络上下载图片
+    public static Drawable loadImageFromUrl(ITransmit trans, String imageUrl,int quality) {
+        InputStream inputStream;
+        try {
+
+            if(trans!=null)
+                inputStream=trans.downStream(imageUrl);
+            else{
+                URL url = new URL(imageUrl);
+                HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();
+                inputStream = urlConn.getInputStream();
+            }
+
+            BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
+            Bitmap bm;
+            FileUtils fileUtils=new FileUtils(AppDefault.getAppName());
+            String fileName= Base64.encode(imageUrl)+".jpg";
+            File file = fileUtils.creatSDFile(fileName);
+            FileOutputStream output = new FileOutputStream(file);
+            Drawable drawable;
+            if(quality==-1){
+                bm=BitmapFactory.decodeStream(inputStream,null,bitmapOptions);
+                bm.compress(Bitmap.CompressFormat.JPEG, 100,output);
+                inputStream.close();
+            }else{
+                bitmapOptions.inSampleSize = 4;
+                bm=BitmapFactory.decodeStream(inputStream,null,bitmapOptions);
+                bm.compress(Bitmap.CompressFormat.JPEG, 50,output);
+                inputStream.close();
+            }
+
+            drawable=Drawable.createFromStream(new FileInputStream(fileUtils.getFile(fileName)), fileName);
+            output.close();
+            output.flush();
+            inputStream=null;
+            //根据图片的URL，下载图片，并生成一个Drawable对象
+            return drawable;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }finally{}
     }
 	
 	
