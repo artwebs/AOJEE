@@ -23,7 +23,7 @@ public class ListAdapterDefault<ViewHolderDefault> extends ListAdapter {
     }
 
     @Override
-    public int initLayoutID() {
+    public int initLayoutID(ViewHolder obj) {
         return R.layout.binlistitem;
     }
 

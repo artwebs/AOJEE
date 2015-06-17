@@ -26,7 +26,7 @@ public class ImgListAdapter extends ListAdapterDefault {
 
 
 	@Override
-	public int initLayoutID() {
+	public int initLayoutID(ViewHolder obj) {
 		return R.layout.imgbinlistitem;
 	}
 

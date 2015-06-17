@@ -19,6 +19,8 @@ public abstract class ListAdapter<T extends ListAdapter.ViewHolder> extends Base
 	protected AOList list=new AOList();
 	protected Activity activity=null;
 	protected int dataSize=0;
+	private boolean isRowSame=true;
+	private int lastLayoutID=0;
 	
 	public ListAdapter(Activity activity)
 	{
@@ -79,19 +81,25 @@ public abstract class ListAdapter<T extends ListAdapter.ViewHolder> extends Base
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		T obj;
-		if(convertView==null){
-			convertView=initLayout(initLayoutID());
+		if(convertView==null||!isRowSame){
 			obj=initViewHolder();
+			obj.setMap((HashMap) this.getItem(position));
+			int layoutID=initLayoutID(obj);
+			convertView = initLayout(layoutID);
 			convertView.setTag(obj);
+			if(isRowSame){
+				isRowSame=lastLayoutID==layoutID?true:false;
+				lastLayoutID=layoutID;
+			}
 		}else {
 			obj= (T) convertView.getTag();
+			obj.setMap((HashMap) this.getItem(position));
 		}
-		obj.setMap((HashMap) this.getItem(position));
 		updateUI(convertView, obj);
 		return convertView;
 	}
 
-	public abstract int initLayoutID();
+	public abstract int initLayoutID(T obj);
 	public abstract T initViewHolder();
 
 	public View initLayout(int layoutid){

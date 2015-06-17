@@ -103,7 +103,7 @@ public class ArtTabPager extends RelativeLayout {
         }
 
         @Override
-        public int initLayoutID() {
+        public int initLayoutID(ViewHolder obj) {
             return intTabPageLayoutItemID();
         }
 

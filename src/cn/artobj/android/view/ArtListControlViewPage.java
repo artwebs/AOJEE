@@ -28,7 +28,7 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		inflater=LayoutInflater.from(AppDefault.getAppContext());
 		footerView = (View) inflater.inflate(R.layout.artlistview_footer,null);
 		headerView = (View) inflater.inflate(R.layout.artlistview_head,null);
-//		listView.addHeaderView(headerView);
+//		this.listView.addHeaderView(headerView);
 		this.listView.addFooterView(footerView);
 		this.listView.setAdapter(this.adapter);
 		this.listView.setOnScrollListener(this);
