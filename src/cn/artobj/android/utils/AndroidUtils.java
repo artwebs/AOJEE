@@ -9,14 +9,18 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import cn.artobj.android.app.AppDefault;
 import cn.artobj.android.transmit.ITransmit;
 import cn.artobj.utils.Base64;
+import cn.artobj.utils.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -176,7 +180,28 @@ public class AndroidUtils {
             throw new RuntimeException(e);
         }finally{}
     }
-	
-	
+
+    public static void buttonTimeDisabled(final Button btn,int timelen)
+    {
+        final String title=btn.getText().toString();
+        final Handler handler=new Handler();
+        final int[] second = {timelen};
+        btn.setEnabled(false);
+        Runnable task = new Runnable() {
+            public void run() {
+                if (second[0]>0) {
+                    handler.postDelayed(this, 1000);
+                    second[0] -= 1;
+                    btn.setText(Utils.format(second[0])+"秒");
+                }else{
+                    btn.setEnabled(true);
+                    btn.setText(title);
+                }
+            }
+        };
+        handler.postDelayed(task, 1000);
+    }
+
+
 
 }
