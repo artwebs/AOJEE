@@ -97,14 +97,14 @@ public class ArtListControlPage implements OnScrollListener {
 		listener.loadMoreData(page,pageSize);
 	}
 	
-	public synchronized void notifyDataChanged(AOList tmpList)
+	public synchronized void notifyDataChanged(final AOList tmpList)
 	{
 		if(tmpList.size()>0)
     	{
-			list.addend(tmpList);
     		window.runOnUiThread(new Runnable() {
 				@Override
 				public synchronized void run() {
+					list.addend(tmpList);
 					adapter.notifyDataSetChanged();
 					if(dataSize!=-1&&dataSize<=adapter.getCount()){
 						finishLoadData();

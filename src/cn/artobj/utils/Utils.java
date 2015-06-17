@@ -11,6 +11,8 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.*;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -466,6 +468,37 @@ public class Utils {
             s = "0" + s;
         }
         return s;
+    }
+
+    public static enum MD5BitType{BIT16,BIT32}
+    public static String MD5(String sourceStr){
+        return MD5(sourceStr,MD5BitType.BIT32);
+    }
+    public static String MD5(String sourceStr,MD5BitType type) {
+        String result = "";
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            md.update(sourceStr.getBytes());
+            byte b[] = md.digest();
+            int i;
+            StringBuffer buf = new StringBuffer("");
+            for (int offset = 0; offset < b.length; offset++) {
+                i = b[offset];
+                if (i < 0)
+                    i += 256;
+                if (i < 16)
+                    buf.append("0");
+                buf.append(Integer.toHexString(i));
+            }
+            result = buf.toString();
+            if(type==MD5BitType.BIT16)
+                result=buf.toString().substring(8, 24);
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println(e);
+        }finally {
+
+        }
+        return result;
     }
 
 }
