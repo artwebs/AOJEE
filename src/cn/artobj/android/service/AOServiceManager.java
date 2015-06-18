@@ -31,10 +31,13 @@ public class AOServiceManager {
 			activity=obj;
 			AOService.setServiceResult(serviceSign);
 			AOService.setBroadcaster(LocalBroadcastManager.getInstance(activity));
-			if(iTime!=0)intervalTime=iTime;
+			if(iTime!=0)
+				intervalTime=iTime;
 			serviceIntent=new Intent(obj,tagClass);
-    		if(manager==null)manager=(AlarmManager) activity.getSystemService(Context.ALARM_SERVICE);
-     		if(pendingIntent==null)pendingIntent=PendingIntent.getService(activity, 0, serviceIntent, 0);
+    		if(manager==null)
+				manager=(AlarmManager) activity.getSystemService(Context.ALARM_SERVICE);
+     		if(pendingIntent==null)
+				pendingIntent=PendingIntent.getService(activity, 0, serviceIntent, 0);
      		manager.setRepeating(AlarmManager.RTC, 0, intervalTime,pendingIntent);
     		
 		}
