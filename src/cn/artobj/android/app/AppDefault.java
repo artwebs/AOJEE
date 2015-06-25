@@ -140,10 +140,15 @@ public abstract class AppDefault extends Application {
 
 
     public static void showNotification(int id, int icon, String title, String head, String content, Class obj) {
+        showNotification(id, icon, title, head, content,null, obj);
+    }
+
+    public static void showNotification(int id, int icon, String title, String head, String content,String nContent ,Class obj) {
         NotificationManager notificationManager = (NotificationManager) getAppContext().getSystemService(NOTIFICATION_SERVICE);
         Notification notification = new Notification(icon, title, System.currentTimeMillis());
         Intent intent = new Intent();
         intent.setClass(getAppContext(), obj);
+        intent.putExtra("NoticeContent",nContent);
         PendingIntent contentIntent = PendingIntent.getActivity(getAppContext(), 0, intent, 0);
         notification.defaults = Notification.DEFAULT_SOUND;
         notification.setLatestEventInfo(getAppContext(), head, content, contentIntent);
