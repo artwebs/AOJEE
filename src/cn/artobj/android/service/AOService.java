@@ -38,17 +38,14 @@ public abstract class AOService extends Service {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
-	
-	
+
+
 	@Override
-	public void onStart(Intent intent, int startId) {
-		// TODO Auto-generated method stub
-		super.onStart(intent, startId);
+	public int onStartCommand(Intent intent, int flags, int startId) {
 		serviceRun();
+		return super.onStartCommand(intent, flags, startId);
 	}
-	
+
 	public abstract void serviceRun();
 	
 	public void sendResult(String message)
