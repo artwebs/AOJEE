@@ -19,6 +19,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.AudioManager;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import cn.artobj.android.data.DataBase;
@@ -148,8 +149,13 @@ public abstract class AppDefault extends Application {
         Notification notification = new Notification(icon, title, System.currentTimeMillis());
         Intent intent = new Intent();
         intent.setClass(getAppContext(), obj);
-        intent.putExtra("NoticeContent",nContent);
-        PendingIntent contentIntent = PendingIntent.getActivity(getAppContext(), 0, intent, 0);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//这行代码会解决此问题
+        intent.addFlags(Intent.FILL_IN_DATA);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("NoticeContent", nContent);
+        intent.putExtras(bundle);
+        PendingIntent contentIntent = PendingIntent.getActivity(getAppContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         notification.defaults = Notification.DEFAULT_SOUND;
         notification.setLatestEventInfo(getAppContext(), head, content, contentIntent);
         notificationManager.notify(id, notification);
