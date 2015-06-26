@@ -157,6 +157,7 @@ public abstract class AppDefault extends Application {
         intent.putExtras(bundle);
         PendingIntent contentIntent = PendingIntent.getActivity(getAppContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         notification.defaults = Notification.DEFAULT_SOUND;
+        notification.flags |= Notification.FLAG_AUTO_CANCEL;
         notification.setLatestEventInfo(getAppContext(), head, content, contentIntent);
         notificationManager.notify(id, notification);
     }
