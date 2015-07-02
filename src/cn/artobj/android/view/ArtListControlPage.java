@@ -1,14 +1,20 @@
 package cn.artobj.android.view;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
+import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
+import android.widget.AdapterView;
 import cn.artobj.android.adapter.ListAdapter;
 import cn.artobj.object.AOList;
 import android.widget.Toast;
+import cn.artobj.object.AOMap;
 
-public class ArtListControlPage implements OnScrollListener {
+import java.util.HashMap;
+
+public class ArtListControlPage implements OnScrollListener,AdapterView.OnItemClickListener {
 	private final static String tag="ArtListViewPage";
 	protected Activity window;
 	protected AOList list=new AOList();
@@ -19,9 +25,13 @@ public class ArtListControlPage implements OnScrollListener {
 
 	protected boolean isLastRow = false;
 	protected int lastPage =0;
+	protected Class itemToClass=null;
 
 	protected OnControlPageListener listener;
 
+	public void setItemToClass(Class itemToClass) {
+		this.itemToClass = itemToClass;
+	}
 
 	public void setDataSize(int dataSize) {
 		this.dataSize = dataSize;
@@ -117,6 +127,17 @@ public class ArtListControlPage implements OnScrollListener {
 
 
 	}
+
+	@Override
+	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		if(itemToClass==null)return;
+		AOMap map=new AOMap();
+		map.setItemByHashMap((HashMap)(parent.getAdapter().getItem(position)));
+		Intent intent=new Intent(window,itemToClass);
+		intent.putExtra("data",map.toJSONObject().toString());
+		window.startActivity(intent);
+	}
+
 
 	public interface OnControlPageListener
 	{

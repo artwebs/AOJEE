@@ -46,7 +46,11 @@ public class ArtListControlViewPage extends ArtListControlPage {
 //		arrowImageView.setAnimation(animation);
 	}
 
-
+	@Override
+	public void setItemToClass(Class itemToClass) {
+		super.setItemToClass(itemToClass);
+		this.listView.setOnItemClickListener(this);
+	}
 
 	@Override
 	protected void loadData() {
