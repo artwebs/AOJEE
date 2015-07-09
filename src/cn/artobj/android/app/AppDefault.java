@@ -52,8 +52,17 @@ public abstract class AppDefault extends Application {
         activities.add(activity);
     }
 
+    public boolean isExistActivity(Activity activity){
+        if(activities.contains(activity))
+            return true;
+        return false;
+    }
+
     public void removeActivity(Activity activity) {
-        if (activities.contains(activity)) activities.remove(activity);
+        if (activities.contains(activity)) {
+            activities.remove(activity);
+            activity.finish();
+        }
     }
 
     @Override
