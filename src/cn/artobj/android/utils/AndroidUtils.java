@@ -155,7 +155,7 @@ public class AndroidUtils {
             BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
             Bitmap bm;
             FileUtils fileUtils=new FileUtils(AppDefault.getAppName());
-            String fileName= Base64.encode(imageUrl)+".jpg";
+            String fileName= Base64.encode(imageUrl);
             File file = fileUtils.creatSDFile(fileName);
             FileOutputStream output = new FileOutputStream(file);
             Drawable drawable;
