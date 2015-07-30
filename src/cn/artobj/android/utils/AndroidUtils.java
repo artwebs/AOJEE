@@ -139,6 +139,16 @@ public class AndroidUtils {
         return loadImageFromUrl(null,imageUrl, quality);
     }
 
+    public static String tryLoadLocalImageWithUrl(String imageUrl){
+        FileUtils fileUtils=new FileUtils(AppDefault.getAppName());
+        String fileName= Base64.encode(imageUrl);
+        String path=imageUrl;
+        if(fileUtils.isFileExist(fileName)){
+            path=fileUtils.getSDPATH()+path;
+        }
+        return path;
+    }
+
     //该方法用于根据图片的URL，从网络上下载图片
     public static Drawable loadImageFromUrl(ITransmit trans, String imageUrl,int quality) {
         InputStream inputStream;
@@ -177,9 +187,12 @@ public class AndroidUtils {
             //根据图片的URL，下载图片，并生成一个Drawable对象
             return drawable;
         } catch (Exception e) {
-            throw new RuntimeException(e);
+//            throw new RuntimeException(e);
         }finally{}
+        return null;
     }
+
+
 
     public static void buttonTimeDisabled(final Button btn,int timelen)
     {
