@@ -144,7 +144,7 @@ public class AndroidUtils {
         String fileName= Base64.encode(imageUrl);
         String path=imageUrl;
         if(fileUtils.isFileExist(fileName)){
-            path=fileUtils.getSDPATH()+path;
+            path=fileUtils.getSDPATH()+fileName;
         }
         return path;
     }
