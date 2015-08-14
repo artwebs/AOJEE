@@ -139,10 +139,10 @@ public class AndroidUtils {
         return loadImageFromUrl(null,imageUrl, quality);
     }
 
-    public static String tryLoadLocalImageWithUrl(String imageUrl){
+    public static String try2LocalPathWithUrl(String url){
         FileUtils fileUtils=new FileUtils(AppDefault.getAppName());
-        String fileName= Base64.encode(imageUrl);
-        String path=imageUrl;
+        String fileName= Base64.encode(url);
+        String path=url;
         if(fileUtils.isFileExist(fileName)){
             path=fileUtils.getSDPATH()+fileName;
         }
