@@ -42,10 +42,10 @@ public abstract class ListAdapter<T extends ListAdapter.ViewHolder> extends Base
 	
 	public void appendItem(AOList list)
 	{
-		Log.d(tag,"item"+this.list.getItem().toString());
-		Log.d(tag,"adder"+list.getItem().toString());
+//		Log.d(tag,"item"+this.list.getItem().toString());
+//		Log.d(tag,"adder"+list.getItem().toString());
 		this.list.addend(list);
-		Log.d(tag,"appendItem"+this.list.getItem().toString());
+//		Log.d(tag,"appendItem"+this.list.getItem().toString());
 	}
 	
 	public void clearItem()
