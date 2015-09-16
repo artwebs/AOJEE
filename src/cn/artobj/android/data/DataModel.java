@@ -82,6 +82,11 @@ public abstract class DataModel {
         return this;
     }
 
+    public DataModel where(int id){
+        this.where="id = "+id;
+        return this;
+    }
+
     public DataModel order(String order){
         this.order=order;
         return this;
