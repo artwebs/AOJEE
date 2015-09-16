@@ -48,6 +48,10 @@ public abstract class SQLite{
 			};
 			this.db=dbHelper.getWritableDatabase();
 		}
+
+		if(!this.db.isOpen()){
+			this.db=dbHelper.getWritableDatabase();
+		}
 			
 	}
 	
@@ -88,8 +92,7 @@ public abstract class SQLite{
 				this.db.execSQL(sql, bindArgs);
 			this.db.setTransactionSuccessful();
 			flag=true;
-		}
-		finally
+		} finally
 		{
 			this.db.endTransaction();
 		}	
@@ -133,6 +136,7 @@ public abstract class SQLite{
 		{
 			this.db.endTransaction();
 		}
+		this.close();
 		return flag;
 	}
 
