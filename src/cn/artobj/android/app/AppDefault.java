@@ -14,7 +14,9 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -244,6 +246,24 @@ public abstract class AppDefault extends Application {
                 Context.MODE_WORLD_WRITEABLE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.clear().commit();
+    }
+
+    public static Object meta(String name,Object def){
+        Object rs = null;
+        ApplicationInfo appInfo = null;
+        try {
+            appInfo = getAppContext().getPackageManager()
+                    .getApplicationInfo(getAppContext().getPackageName(),
+                            PackageManager.GET_META_DATA);
+            rs=appInfo.metaData.get(name);
+        } catch (Exception e) {
+        }finally {
+
+        }
+        if (rs == null){
+            rs = def;
+        }
+        return rs;
     }
 
 

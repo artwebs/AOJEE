@@ -1,6 +1,6 @@
 package cn.artobj.android.remote;
 
-import android.util.Log;
+import cn.artobj.android.app.AOLog;
 import cn.artobj.json.JSONException;
 import cn.artobj.json.JSONObject;
 import cn.artobj.object.AOMap;
@@ -15,7 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public abstract class RDataDefault extends RData {
-    private final String tag="RDataDefault";
     private String key="X+v!zSwkUloAQ$Gf/n)PVbi7";
     private String iv="k&dWHiQu";
     private int sysid=0;
@@ -76,7 +75,7 @@ public abstract class RDataDefault extends RData {
         System.arraycopy(this.getCmdCode().getBytes(),0,rsByte,8,this.getCmdCode().length()>24?24:this.getCmdCode().length());
         System.arraycopy(tmp.getBytes(),0,rsByte,32,tmp.length());
 //        Log.w(tag,"字节数据=>"+ Arrays.toString(rsByte));
-        Log.w(tag,"发送接口=>"+ this.getCmdCode()+"\n发送数据＝>"+this.getParams());
+        AOLog.log(this,"发送接口=>"+ this.getCmdCode()+"\n发送数据＝>"+this.getParams());
         try {
             return new String(rsByte,"utf-8");
         } catch (UnsupportedEncodingException e) {
@@ -102,7 +101,7 @@ public abstract class RDataDefault extends RData {
             contentByte = new byte[len-25];
             System.arraycopy(source, 32, contentByte, 0, len - 25);
             result=AOSecurity3DES.decode(new String(contentByte).trim(),key,iv);
-            Log.w(tag, "接收接口=》"+new String(methodByte).trim()+"\n接收数据=》" + result);
+            AOLog.log(this, "接收接口=》" + new String(methodByte).trim() + "\n接收数据=》" + result);
         }catch (Exception e){
             throw new Exception("数据解释错误");
 

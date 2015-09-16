@@ -179,7 +179,8 @@ public abstract class SQLite{
 	
 	public void close()
 	{
-		this.db.close();
+		if(this.db!=null)
+			this.db.close();
 		this.db=null;
 	}
 	

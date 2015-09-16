@@ -3,7 +3,7 @@ package cn.artobj.android.remote;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
-import android.util.Log;
+import cn.artobj.android.app.AOLog;
 import cn.artobj.android.app.AppDefault;
 import cn.artobj.android.app.DialogStyle;
 import cn.artobj.android.data.AODBCmd;
@@ -96,7 +96,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			}
         } catch (Exception e) {
             e.printStackTrace();
-            Log.d(tag,ERROR.NO_INTERENT_PERMISSION.getError());
+			AOLog.log(this, ERROR.NO_INTERENT_PERMISSION.getError());
 			if(dialog!=null)
 				dialog.close();
             if(this.iRCallObj!=null)
@@ -161,9 +161,9 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 					cacheStr= AODBCmd.queryCmdResult(rdata.getCmdCode() + rdata.getAllCommand());
                     if(cacheStr!=null){
 						result= Base64.decode2Byte(AODBCmd.queryCmdResult(rdata.getCmdCode() + rdata.getAllCommand()));
-						Log.w(tag,"使用缓存数据:"+rdata.getCmdCode() +rdata.getParams());
+						AOLog.log(this, "使用缓存数据:" + rdata.getCmdCode() + rdata.getParams());
 					}else{
-						Log.w(tag,"无缓存数据:"+rdata.getCmdCode() +rdata.getParams());
+						AOLog.log(this, "无缓存数据:" + rdata.getCmdCode() + rdata.getParams());
 					}
                 } catch (Exception e) {
 					result=null;
@@ -177,7 +177,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			if(result==null)
 			try {
                 result=remoteService.invoke(rdata);
-				Log.w(tag,"请求数据:"+rdata.getCmdCode() +rdata.getParams());
+				AOLog.log(this, "请求数据:" + rdata.getCmdCode() + rdata.getParams());
 				isSave=true;
 			} catch (ServiceException e) {
                 rdata.getResponse().setReqError(e);
@@ -199,7 +199,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 			}
 			else
 			{
-				Log.e(tag, "服务已经停止");
+				AOLog.log(this, "服务已经停止");
 			}
 			if(rdata.getChildren()!=null&&rdata.getResponse().succeed())
 			{
@@ -253,7 +253,7 @@ public abstract class RemoteFactory extends ArtPoolSingleFixed {
 				try {
 					listLatch.get(i).notifyAll();
 				} catch (Exception e) {
-					Log.e(tag, e.getMessage());
+					AOLog.log(this, e.getMessage());
 				}finally{}
 			}
 			listLatch=null;

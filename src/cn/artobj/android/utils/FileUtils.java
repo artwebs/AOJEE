@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import cn.artobj.android.app.AOLog;
 import cn.artobj.android.app.AppDefault;
 
 import android.app.Activity;
@@ -44,7 +45,7 @@ public class FileUtils {
 		this();
 		this.creatSDDir(path);
 		SDPATH=SDPATH+path+"/";
-		Log.d(tag,"FileUtils="+SDPATH);
+		AOLog.log(this,"FileUtils="+SDPATH);
 	}
 	
 	/**
@@ -53,7 +54,7 @@ public class FileUtils {
 	 * @throws java.io.IOException
 	 */
 	public File creatSDFile(String fileName) throws IOException {
-		Log.d(tag,"creatSDFile="+SDPATH+fileName);
+		AOLog.log(this.getClass(), "creatSDFile=" + SDPATH + fileName);
 		File file = new File(SDPATH , fileName);
 		file.createNewFile();
 		return file;
@@ -61,7 +62,7 @@ public class FileUtils {
 	
 	public void deleteSDFile(String fileName)
 	{
-		Log.d(tag,"deleteSDFile="+SDPATH+fileName);
+		AOLog.log(this, "deleteSDFile=" + SDPATH + fileName);
 		File file = new File(SDPATH,fileName);
 		file.delete();
 	}
@@ -81,7 +82,7 @@ public class FileUtils {
 	 * 判断SD卡上的文件夹是否存在
 	 */
 	public boolean isFileExist(String fileName){
-		Log.d(tag,"isFileExist:"+SDPATH+ fileName);
+		AOLog.log(this, "isFileExist:" + SDPATH + fileName);
 		File file = new File(SDPATH+ fileName);
 		return file.exists();
 	}
@@ -90,7 +91,7 @@ public class FileUtils {
 	 * 判断SD卡上的文件夹是否存在
 	 */
 	public File getFile(String fileName){
-		Log.d(tag,"getFile="+SDPATH+fileName);
+		AOLog.log(this, "getFile=" + SDPATH + fileName);
 		File file = new File(SDPATH+fileName);
 		return file;
 	}

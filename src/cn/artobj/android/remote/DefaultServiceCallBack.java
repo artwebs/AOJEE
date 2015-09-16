@@ -1,9 +1,9 @@
 package cn.artobj.android.remote;
 
 import android.app.Activity;
-import android.util.Log;
 import android.widget.Toast;
 import cn.artobj.R;
+import cn.artobj.android.app.AOLog;
 import cn.artobj.android.utils.AndroidUtils;
 
 import java.util.concurrent.CountDownLatch;
@@ -34,7 +34,7 @@ public class DefaultServiceCallBack implements IServiceCallBack{
             if (this.window!=null&&data.getSn() != R.string.Update)
                 AndroidUtils.toastShow(window, data.getResponse()
                         .getMessage(), Toast.LENGTH_LONG);
-            Log.w(tag,data.getResponse().getMessage());
+            AOLog.log(this, data.getResponse().getMessage());
             return;
         }
         try {
@@ -61,7 +61,7 @@ public class DefaultServiceCallBack implements IServiceCallBack{
             }
         }catch (Exception e){
             e.printStackTrace();
-            Log.w(tag,e.getMessage());
+            AOLog.log(this, e.getMessage());
         }finally {
 
         }
@@ -81,7 +81,7 @@ public class DefaultServiceCallBack implements IServiceCallBack{
 
 
     public void resposne(RemoteResponse res) throws Exception{
-        Log.w(tag,res.getResultStr());
+        AOLog.log(this, res.getResultStr());
     }
 }
 

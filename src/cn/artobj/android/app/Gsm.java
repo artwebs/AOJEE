@@ -21,7 +21,7 @@ public class Gsm {
 	{
 		TelephonyManager tm=((TelephonyManager) AppDefault.getAppContext().getSystemService(Context.TELEPHONY_SERVICE));
 		List<NeighboringCellInfo> infoLists = tm.getNeighboringCellInfo();  
-	    System.out.println("infoLists:"+infoLists+"     size:"+infoLists.size());  
+//	    System.out.println("infoLists:"+infoLists+"     size:"+infoLists.size());
 	    int l=0,c=0,b=0;
 	    for (NeighboringCellInfo info : infoLists) {  
 	        b+=(-133+2*info.getRssi());// 获取邻区基站信号强度    

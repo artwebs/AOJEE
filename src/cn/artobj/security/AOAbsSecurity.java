@@ -41,7 +41,7 @@ public class AOAbsSecurity {
                     j=0;
             rs[i]=keyByte[j];
         }
-        System.out.println(new String(rs));
+//        System.out.println(new String(rs));
         return rs;
     }
 
@@ -55,7 +55,7 @@ public class AOAbsSecurity {
             rs[i]=ivByte[j];
 
         }
-        System.out.println(new String(rs));
+//        System.out.println(new String(rs));
         return rs;
     }
 
