@@ -52,10 +52,8 @@ public class ArtListControlPage implements OnScrollListener,AdapterView.OnItemCl
 	
 	public void load()
 	{
-		this.adapter.clearItem();
 		page=1;
 		setDataSize(pageSize);
-		list.clear();
 		loadData();
 	}
 	
@@ -109,6 +107,10 @@ public class ArtListControlPage implements OnScrollListener,AdapterView.OnItemCl
 	
 	public synchronized void notifyDataChanged(final AOList tmpList)
 	{
+		if(page==1){
+			this.adapter.clearItem();
+			list.clear();
+		}
 		if(tmpList.size()>0)
     	{
     		window.runOnUiThread(new Runnable() {

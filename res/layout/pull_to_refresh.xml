@@ -43,6 +43,7 @@
                 android:layout_height="0dip"
                 android:layout_weight="1"
                 android:gravity="center_horizontal|bottom"
+                android:textColor="@color/black"
                 android:text="@string/pull_to_refresh" />
 
             <TextView
@@ -51,6 +52,7 @@
                 android:layout_height="0dip"
                 android:layout_weight="1"
                 android:gravity="center_horizontal|top"
+                android:textColor="@color/black"
                 android:text="@string/updated_at" />
         </LinearLayout>
     </LinearLayout>
