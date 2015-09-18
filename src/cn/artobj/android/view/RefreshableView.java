@@ -247,7 +247,7 @@ public class RefreshableView extends LinearLayout implements OnTouchListener {
 					new RefreshingTask().execute();
 				} else if (currentStatus == STATUS_PULL_TO_REFRESH) {
 					// 松手时如果是下拉状态，就去调用隐藏下拉头的任务
-					new HideHeaderTask().execute();
+					runHideHeaderTask();
 				}
 				break;
 			}
@@ -286,7 +286,13 @@ public class RefreshableView extends LinearLayout implements OnTouchListener {
 	public void finishRefreshing() {
 		currentStatus = STATUS_REFRESH_FINISHED;
 		preferences.edit().putLong(UPDATED_AT + mId, System.currentTimeMillis()).commit();
-		new HideHeaderTask().execute();
+		runHideHeaderTask();
+	}
+
+	public void runHideHeaderTask(){
+		if(headerLayoutParams!=null){
+			new HideHeaderTask().execute();
+		}
 	}
 
 	/**

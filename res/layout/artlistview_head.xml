@@ -1,74 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
+              android:layout_height="60dip"
+              android:id="@+id/refreshView"
         >
 
-    <!-- 内容 -->
+    <LinearLayout
+            android:layout_width="200dip"
+            android:layout_height="60dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
 
-    <RelativeLayout
-            android:id="@+id/head_contentLayout"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="30dp" >
-
-        <!-- 箭头图像、进度条 -->
-
-        <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true" >
-
-            <!-- 箭头 -->
-
+        <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="60dip"
+                android:layout_weight="3"
+                >
             <ImageView
-                    android:id="@+id/head_arrowImageView"
+                    android:id="@+id/arrow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:contentDescription="@string/app_name"
-                    android:src="@drawable/arrow" />
-
-            <!-- 进度条 -->
-
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow"
+                    />
             <ProgressBar
-                    android:id="@+id/head_progressBar"
-                    style="@android:style/Widget.ProgressBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center" />
-        </FrameLayout>
-
-        <!-- 提示、最近更新 -->
+                    android:id="@+id/progress_bar"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    />
+        </RelativeLayout>
 
         <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:gravity="center_horizontal"
+                android:layout_width="0dip"
+                android:layout_height="60dip"
+                android:layout_weight="12"
                 android:orientation="vertical" >
 
-            <!-- 提示 -->
+            <TextView
+                    android:id="@+id/description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|bottom"
+                    android:textColor="@color/black"
+                    android:text="@string/pull_to_refresh" />
 
             <TextView
-                    android:id="@+id/head_tipsTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/dropdown_refresh"
-
-                    android:textSize="20sp" />
-
-            <!-- 最近更新 -->
-
-            <TextView
-                    android:id="@+id/head_lastUpdatedTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/last_update"
-
-                    android:textSize="12sp" />
+                    android:id="@+id/updated_at"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|top"
+                    android:textColor="@color/black"
+                    android:text="@string/updated_at" />
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

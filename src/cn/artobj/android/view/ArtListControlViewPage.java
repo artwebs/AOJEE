@@ -15,11 +15,10 @@ import cn.artobj.android.app.AppDefault;
 public class ArtListControlViewPage extends ArtListControlPage {
 	private final String tag="ArtListControlViewPage";
 	private final RotateAnimation animation;
-	private final ImageView arrowImageView;
-	private View headerView;
+	protected View headerView;
 	private View footerView;
 	private LayoutInflater inflater;
-	private ListView listView;
+	protected ListView listView;
 
 
 	public ArtListControlViewPage(Activity window,ListAdapter adapter,ListView listView){
@@ -33,8 +32,6 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		this.listView.setAdapter(this.adapter);
 		this.listView.setOnScrollListener(this);
 
-		arrowImageView = (ImageView) headerView
-				.findViewById(R.id.head_arrowImageView);
 
 		animation = new RotateAnimation(0, -180,
 				RotateAnimation.RELATIVE_TO_SELF, 0.5f,
