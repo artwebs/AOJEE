@@ -11,11 +11,7 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.View.OnTouchListener;
 import android.view.animation.RotateAnimation;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
+import android.widget.*;
 import cn.artobj.R;
 
 /**
@@ -25,152 +21,37 @@ import cn.artobj.R;
  * 
  */
 public class RefreshableView extends LinearLayout implements OnTouchListener {
+	public static final int STATUS_PULL_TO_REFRESH = 0; //下拉状态
+	public static final int STATUS_RELEASE_TO_REFRESH = 1;//释放立即刷新状态
+	public static final int STATUS_REFRESHING = 2;//正在刷新状态
+	public static final int STATUS_REFRESH_FINISHED = 3;//刷新完成或未刷新状态
+	public static final int SCROLL_SPEED = -20;//下拉头部回滚的速度
+	public static final long ONE_MINUTE = 60 * 1000;//一分钟的毫秒值，用于判断上次的更新时间
+	public static final long ONE_HOUR = 60 * ONE_MINUTE;//一小时的毫秒值，用于判断上次的更新时间
+	public static final long ONE_DAY = 24 * ONE_HOUR;//一天的毫秒值，用于判断上次的更新时间
+	public static final long ONE_MONTH = 30 * ONE_DAY;//一月的毫秒值，用于判断上次的更新时间
+	public static final long ONE_YEAR = 12 * ONE_MONTH;//一年的毫秒值，用于判断上次的更新时间
+	private static final String UPDATED_AT = "updated_at"; //上次更新时间的字符串常量，用于作为SharedPreferences的键值
+	private PullToRefreshListener mListener; //下拉刷新的回调接口
+	private SharedPreferences preferences;//用于存储上次更新时间
+	private ProgressBar progressBar; //刷新时显示的进度条
+	private ImageView arrow; //指示下拉和释放的箭头
+	private TextView description;//指示下拉和释放的文字描述
+	private TextView updateAt;//上次更新时间的文字描述
+	private MarginLayoutParams headerLayoutParams;//下拉头的布局参数
+	private long lastUpdateTime;//上次更新时间的毫秒值
+	private int mId = -1;//为了防止不同界面的下拉刷新在上次更新时间上互相有冲突，使用id来做区分
+	private int hideHeaderHeight;//下拉头的高度
+	private int currentStatus = STATUS_REFRESH_FINISHED;//当前处理什么状态，可选值有STATUS_PULL_TO_REFRESH, STATUS_RELEASE_TO_REFRESH,STATUS_REFRESHING 和 STATUS_REFRESH_FINISHED
+	private int lastStatus = currentStatus;//记录上一次的状态是什么，避免进行重复操作
+	private float yDown;//手指按下时的屏幕纵坐标
+	private int touchSlop;//在被判定为滚动之前用户手指可以移动的最大值。
+	private boolean loadOnce;//是否已加载过一次layout，这里onLayout中的初始化只需加载一次
+	private boolean ableToPull;//当前是否可以下拉，只有ListView滚动到头的时候才允许下拉
+	private ListView listView; //需要去下拉刷新的ListView
+	private View header;//下拉头的View
 
-	/**
-	 * 下拉状态
-	 */
-	public static final int STATUS_PULL_TO_REFRESH = 0;
 
-	/**
-	 * 释放立即刷新状态
-	 */
-	public static final int STATUS_RELEASE_TO_REFRESH = 1;
-
-	/**
-	 * 正在刷新状态
-	 */
-	public static final int STATUS_REFRESHING = 2;
-
-	/**
-	 * 刷新完成或未刷新状态
-	 */
-	public static final int STATUS_REFRESH_FINISHED = 3;
-
-	/**
-	 * 下拉头部回滚的速度
-	 */
-	public static final int SCROLL_SPEED = -20;
-
-	/**
-	 * 一分钟的毫秒值，用于判断上次的更新时间
-	 */
-	public static final long ONE_MINUTE = 60 * 1000;
-
-	/**
-	 * 一小时的毫秒值，用于判断上次的更新时间
-	 */
-	public static final long ONE_HOUR = 60 * ONE_MINUTE;
-
-	/**
-	 * 一天的毫秒值，用于判断上次的更新时间
-	 */
-	public static final long ONE_DAY = 24 * ONE_HOUR;
-
-	/**
-	 * 一月的毫秒值，用于判断上次的更新时间
-	 */
-	public static final long ONE_MONTH = 30 * ONE_DAY;
-
-	/**
-	 * 一年的毫秒值，用于判断上次的更新时间
-	 */
-	public static final long ONE_YEAR = 12 * ONE_MONTH;
-
-	/**
-	 * 上次更新时间的字符串常量，用于作为SharedPreferences的键值
-	 */
-	private static final String UPDATED_AT = "updated_at";
-
-	/**
-	 * 下拉刷新的回调接口
-	 */
-	private PullToRefreshListener mListener;
-
-	/**
-	 * 用于存储上次更新时间
-	 */
-	private SharedPreferences preferences;
-
-	/**
-	 * 下拉头的View
-	 */
-	private View header;
-
-	/**
-	 * 需要去下拉刷新的ListView
-	 */
-	private ListView listView;
-
-	/**
-	 * 刷新时显示的进度条
-	 */
-	private ProgressBar progressBar;
-
-	/**
-	 * 指示下拉和释放的箭头
-	 */
-	private ImageView arrow;
-
-	/**
-	 * 指示下拉和释放的文字描述
-	 */
-	private TextView description;
-
-	/**
-	 * 上次更新时间的文字描述
-	 */
-	private TextView updateAt;
-
-	/**
-	 * 下拉头的布局参数
-	 */
-	private MarginLayoutParams headerLayoutParams;
-
-	/**
-	 * 上次更新时间的毫秒值
-	 */
-	private long lastUpdateTime;
-
-	/**
-	 * 为了防止不同界面的下拉刷新在上次更新时间上互相有冲突，使用id来做区分
-	 */
-	private int mId = -1;
-
-	/**
-	 * 下拉头的高度
-	 */
-	private int hideHeaderHeight;
-
-	/**
-	 * 当前处理什么状态，可选值有STATUS_PULL_TO_REFRESH, STATUS_RELEASE_TO_REFRESH,
-	 * STATUS_REFRESHING 和 STATUS_REFRESH_FINISHED
-	 */
-	private int currentStatus = STATUS_REFRESH_FINISHED;;
-
-	/**
-	 * 记录上一次的状态是什么，避免进行重复操作
-	 */
-	private int lastStatus = currentStatus;
-
-	/**
-	 * 手指按下时的屏幕纵坐标
-	 */
-	private float yDown;
-
-	/**
-	 * 在被判定为滚动之前用户手指可以移动的最大值。
-	 */
-	private int touchSlop;
-
-	/**
-	 * 是否已加载过一次layout，这里onLayout中的初始化只需加载一次
-	 */
-	private boolean loadOnce;
-
-	/**
-	 * 当前是否可以下拉，只有ListView滚动到头的时候才允许下拉
-	 */
-	private boolean ableToPull;
 
 	/**
 	 * 下拉刷新控件的构造函数，会在运行时动态添加一个下拉头的布局。
