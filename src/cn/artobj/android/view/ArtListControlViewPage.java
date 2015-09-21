@@ -4,10 +4,13 @@ import android.app.Activity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
+import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import cn.artobj.R;
 import cn.artobj.android.adapter.ListAdapter;
 import cn.artobj.android.app.AppDefault;
@@ -26,7 +29,7 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		this.listView=listView;
 		inflater=LayoutInflater.from(AppDefault.getAppContext());
 		footerView = (View) inflater.inflate(R.layout.artlistview_footer,null);
-		headerView = (View) inflater.inflate(R.layout.artlistview_head,null);
+//		headerView = (View) inflater.inflate(R.layout.artlistview_head, null);
 //		this.listView.addHeaderView(headerView);
 		this.listView.addFooterView(footerView);
 		this.listView.setAdapter(this.adapter);
@@ -42,6 +45,7 @@ public class ArtListControlViewPage extends ArtListControlPage {
 
 //		arrowImageView.setAnimation(animation);
 	}
+
 
 	@Override
 	public void setItemToClass(Class itemToClass) {

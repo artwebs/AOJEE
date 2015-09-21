@@ -4,14 +4,13 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.preference.PreferenceManager;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewConfiguration;
-import android.view.ViewGroup;
+import android.view.*;
 import android.view.animation.RotateAnimation;
 import android.widget.*;
 import cn.artobj.R;
 import cn.artobj.android.adapter.ListAdapter;
+import cn.artobj.android.app.AppDefault;
+import cn.artobj.object.AOList;
 
 /**
  * Created by rsmac on 15/9/18.
@@ -34,7 +33,7 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
     private ImageView arrow; //指示下拉和释放的箭头
     private TextView description;//指示下拉和释放的文字描述
     private TextView updateAt;//上次更新时间的文字描述
-    private LinearLayout.LayoutParams headerLayoutParams;//下拉头的布局参数
+    private RelativeLayout.MarginLayoutParams headerLayoutParams;//下拉头的布局参数
     private long lastUpdateTime;//上次更新时间的毫秒值
     private int mId = -1;//为了防止不同界面的下拉刷新在上次更新时间上互相有冲突，使用id来做区分
     private int hideHeaderHeight;//下拉头的高度
@@ -44,29 +43,52 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
     private int touchSlop;//在被判定为滚动之前用户手指可以移动的最大值。
     private boolean loadOnce;//是否已加载过一次layout，这里onLayout中的初始化只需加载一次
     private boolean ableToPull;//当前是否可以下拉，只有ListView滚动到头的时候才允许下拉
-    private LinearLayout refreshView;
+    private RelativeLayout refreshView;
 
     public ArtListControlViewRefreshPage(Activity window, ListAdapter adapter, ListView listView) {
         super(window, adapter, listView);
         preferences = PreferenceManager.getDefaultSharedPreferences(window);
-        refreshView= (LinearLayout) headerView.findViewById(R.id.refreshView);
-        progressBar = (ProgressBar) headerView.findViewById(R.id.progress_bar);
-        arrow = (ImageView) headerView.findViewById(R.id.arrow);
-        description = (TextView) headerView.findViewById(R.id.description);
-        updateAt = (TextView) headerView.findViewById(R.id.updated_at);
+        LinearLayout header=new LinearLayout(window);
+        header.setGravity(Gravity.CENTER);
+        listView.addHeaderView(header);
+
+        refreshView= (RelativeLayout) LayoutInflater.from(AppDefault.getAppContext()).inflate(R.layout.pull_to_refresh, null);
+        header.addView(refreshView);
+        progressBar = (ProgressBar) refreshView.findViewById(R.id.progress_bar);
+        arrow = (ImageView) refreshView.findViewById(R.id.arrow);
+        description = (TextView) refreshView.findViewById(R.id.description);
+        updateAt = (TextView) refreshView.findViewById(R.id.updated_at);
         touchSlop = ViewConfiguration.get(window).getScaledTouchSlop();
         listView.setOnTouchListener(this);
         refreshUpdatedAtValue();
-
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,60);
-        refreshView.setLayoutParams(lp);
         if (!loadOnce) {
             hideHeaderHeight = -refreshView.getHeight();
-            headerLayoutParams = (LinearLayout.LayoutParams) refreshView.getLayoutParams();
+            headerLayoutParams = (RelativeLayout.MarginLayoutParams) refreshView.getLayoutParams();
             headerLayoutParams.topMargin = hideHeaderHeight;
             loadOnce = true;
         }
+        setOnRefreshListener(new PullToRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshView.setVisibility(View.VISIBLE);
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                refreshView.setVisibility(View.INVISIBLE);
+//                finishRefreshing();
+            }
+        },0);
+
+    }
+
+    public void refreshData(){
+        load();
+    }
+
+    public synchronized void notifyDataChanged(final AOList tmpList){
+        super.notifyDataChanged(tmpList);
     }
 
 
