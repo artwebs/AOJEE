@@ -41,7 +41,9 @@ public class ArtListControlPage implements OnScrollListener,AdapterView.OnItemCl
 		this.pageSize = pageSize;
 	}
 
-
+	public int getPage() {
+		return page;
+	}
 
 	public ArtListControlPage(Activity window,ListAdapter adapter)
 	{
@@ -135,7 +137,9 @@ public class ArtListControlPage implements OnScrollListener,AdapterView.OnItemCl
 	}
 
 	public void notifyLoadNoData(String msg){
-		Toast.makeText(window, msg, Toast.LENGTH_LONG).show();
+		if(page==1){
+			Toast.makeText(window, msg, Toast.LENGTH_LONG).show();
+		}
 	}
 
 	@Override

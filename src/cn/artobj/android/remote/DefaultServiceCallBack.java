@@ -31,10 +31,10 @@ public class DefaultServiceCallBack implements IServiceCallBack{
         final CountDownLatch latch = new CountDownLatch(1);
         if (!data.getResponse().succeed()&&!validation(data.getResponse()
                 .getMessage())) {
-            if (this.window!=null&&data.getSn() != R.string.Update)
-                AndroidUtils.toastShow(window, data.getResponse()
-                        .getMessage(), Toast.LENGTH_LONG);
-            AOLog.log(this, data.getResponse().getMessage());
+            if (data.getSn() != R.string.Update)
+                error(data);
+
+
             return;
         }
         try {
@@ -75,6 +75,15 @@ public class DefaultServiceCallBack implements IServiceCallBack{
 
     }
 
+    public void error(RData data) {
+        if(window!=null){
+            AndroidUtils.toastShow(window, data.getResponse()
+                    .getMessage(), Toast.LENGTH_LONG);
+        }else{
+            AOLog.log(this, data.getResponse().getMessage());
+        }
+    }
+
     public boolean validation(String err){
         return false;
     }
@@ -82,6 +91,7 @@ public class DefaultServiceCallBack implements IServiceCallBack{
 
     public void resposne(RemoteResponse res) throws Exception{
         AOLog.log(this, res.getResultStr());
+
     }
 }
 

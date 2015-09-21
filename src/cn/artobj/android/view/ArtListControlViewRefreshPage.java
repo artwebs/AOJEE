@@ -46,6 +46,8 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
     private boolean ableToPull;//当前是否可以下拉，只有ListView滚动到头的时候才允许下拉
     private RelativeLayout refreshView;
 
+    private boolean isloaded=false;
+
     public ArtListControlViewRefreshPage(Activity window, ListAdapter adapter, ListView listView) {
         super(window, adapter, listView);
         preferences = PreferenceManager.getDefaultSharedPreferences(window);
@@ -60,7 +62,6 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
         description = (TextView) refreshView.findViewById(R.id.description);
         updateAt = (TextView) refreshView.findViewById(R.id.updated_at);
         touchSlop = ViewConfiguration.get(window).getScaledTouchSlop();
-        listView.setOnTouchListener(this);
         refreshUpdatedAtValue();
         if (!loadOnce) {
             hideHeaderHeight = -120;
@@ -80,9 +81,24 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
         }
     }
 
+    @Override
+    public void load() {
+        isloaded=false;
+        listView.setOnTouchListener(null);
+        super.load();
+    }
+
     public synchronized void notifyDataChanged(final AOList tmpList){
         super.notifyDataChanged(tmpList);
         finishRefreshing();
+        if(page>1){
+            if(!isloaded){
+                listView.setOnTouchListener(this);
+                isloaded=true;
+            }
+        }else {
+            listView.setOnTouchListener(null);
+        }
     }
 
 

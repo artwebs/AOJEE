@@ -7,10 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
-import android.widget.AbsListView;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
+import android.widget.*;
 import cn.artobj.R;
 import cn.artobj.android.adapter.ListAdapter;
 import cn.artobj.android.app.AppDefault;
@@ -29,6 +26,7 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		super(window,adapter);
 		this.listView=listView;
 		inflater=LayoutInflater.from(AppDefault.getAppContext());
+		initFootView();
 		this.listView.setAdapter(this.adapter);
 		this.listView.setOnScrollListener(this);
 
@@ -38,24 +36,34 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		animation.setInterpolator(new LinearInterpolator());
 		animation.setDuration(250);
 		animation.setFillAfter(true);
-
-//		arrowImageView.setAnimation(animation);
 	}
 
 	private void initFootView(){
 		if(footerView!=null){
 			this.listView.removeFooterView(footerView);
 		}
-		this.listView.addFooterView(LayoutInflater.from(AppDefault.getAppContext()).inflate(R.layout.artlistview_footer,null));
+		footerView=LayoutInflater.from(AppDefault.getAppContext()).inflate(R.layout.artlistview_footer,null);
+		this.listView.addFooterView(footerView);
 	}
 
-	private void errorFootView(){
-		if(footerView!=null){
-			this.listView.removeFooterView(footerView);
+	@Override
+	public void notifyLoadNoData(String msg) {
+//		super.notifyLoadNoData(msg);
+		if(page==1){
+			if(footerView!=null){
+				TextView load_more_tv = (TextView) footerView.findViewById(R.id.load_more_tv);
+				LinearLayout loading_layout= (LinearLayout) footerView.findViewById(R.id.loading_layout);
+				loading_layout.setVisibility(View.GONE);
+				load_more_tv.setVisibility(View.VISIBLE);
+				load_more_tv.setText(msg);
+			}else{
+				super.notifyLoadNoData(msg);
+			}
+		}else{
+			finishLoadData();
 		}
-		this.listView.addFooterView(LayoutInflater.from(AppDefault.getAppContext()).inflate(R.layout.artlistview_footer,null));
-	}
 
+	}
 
 	@Override
 	public void setItemToClass(Class itemToClass) {
