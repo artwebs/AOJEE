@@ -9,13 +9,14 @@ import android.view.animation.RotateAnimation;
 import android.widget.*;
 import cn.artobj.R;
 import cn.artobj.android.adapter.ListAdapter;
+import cn.artobj.android.app.AOLog;
 import cn.artobj.android.app.AppDefault;
 import cn.artobj.object.AOList;
 
 /**
  * Created by rsmac on 15/9/18.
  */
-public class ArtListControlViewRefreshPage extends ArtListControlViewPage implements View.OnTouchListener {
+public class ArtListControlViewRefreshPage extends ArtListControlViewPage implements View.OnTouchListener,ArtListControlPage.OnControlPageListener {
     public static final int STATUS_PULL_TO_REFRESH = 0; //下拉状态
     public static final int STATUS_RELEASE_TO_REFRESH = 1;//释放立即刷新状态
     public static final int STATUS_REFRESHING = 2;//正在刷新状态
@@ -62,33 +63,26 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
         listView.setOnTouchListener(this);
         refreshUpdatedAtValue();
         if (!loadOnce) {
-            hideHeaderHeight = -refreshView.getHeight();
+            hideHeaderHeight = -120;
             headerLayoutParams = (RelativeLayout.MarginLayoutParams) refreshView.getLayoutParams();
             headerLayoutParams.topMargin = hideHeaderHeight;
+            refreshView.setLayoutParams(headerLayoutParams);
             loadOnce = true;
         }
-        setOnRefreshListener(new PullToRefreshListener() {
-            @Override
-            public void onRefresh() {
-                refreshView.setVisibility(View.VISIBLE);
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                refreshView.setVisibility(View.INVISIBLE);
-//                finishRefreshing();
-            }
-        },0);
+        this.setListener(this);
 
     }
 
-    public void refreshData(){
-        load();
+    public void onRefresh() {
+        page=1;
+        if(mListener!=null){
+            mListener.loadMoreData(true,page,pageSize);
+        }
     }
 
     public synchronized void notifyDataChanged(final AOList tmpList){
         super.notifyDataChanged(tmpList);
+        finishRefreshing();
     }
 
 
@@ -97,7 +91,6 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
      */
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-
         setIsAbleToPull(event);
         if (ableToPull) {
             switch (event.getAction()) {
@@ -294,6 +287,14 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
         updateAt.setText(updateAtValue);
     }
 
+    @Override
+    public void loadMoreData(int page, int pageSize) {
+        if(mListener!=null){
+            mListener.loadMoreData(false,page,pageSize);
+        }
+
+    }
+
     /**
      * 正在刷新的任务，在此任务中会去回调注册进来的下拉刷新监听器。
      *
@@ -315,9 +316,7 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
             }
             currentStatus = STATUS_REFRESHING;
             publishProgress(0);
-            if (mListener != null) {
-                mListener.onRefresh();
-            }
+            onRefresh();
             return null;
         }
 
@@ -386,12 +385,10 @@ public class ArtListControlViewRefreshPage extends ArtListControlViewPage implem
      * @author guolin
      */
     public interface PullToRefreshListener {
-
-        /**
-         * 刷新时会去回调此方法，在方法内编写具体的刷新逻辑。注意此方法是在子线程中调用的， 你可以不必另开线程来进行耗时操作。
-         */
-        void onRefresh();
+        void loadMoreData(boolean isRefresh,int page,int pageSize);
 
     }
+
+
 }
 

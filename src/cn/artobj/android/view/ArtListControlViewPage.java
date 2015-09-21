@@ -14,6 +14,7 @@ import android.widget.RelativeLayout;
 import cn.artobj.R;
 import cn.artobj.android.adapter.ListAdapter;
 import cn.artobj.android.app.AppDefault;
+import cn.artobj.object.AOList;
 
 public class ArtListControlViewPage extends ArtListControlPage {
 	private final String tag="ArtListControlViewPage";
@@ -28,13 +29,8 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		super(window,adapter);
 		this.listView=listView;
 		inflater=LayoutInflater.from(AppDefault.getAppContext());
-		footerView = (View) inflater.inflate(R.layout.artlistview_footer,null);
-//		headerView = (View) inflater.inflate(R.layout.artlistview_head, null);
-//		this.listView.addHeaderView(headerView);
-		this.listView.addFooterView(footerView);
 		this.listView.setAdapter(this.adapter);
 		this.listView.setOnScrollListener(this);
-
 
 		animation = new RotateAnimation(0, -180,
 				RotateAnimation.RELATIVE_TO_SELF, 0.5f,
@@ -44,6 +40,20 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		animation.setFillAfter(true);
 
 //		arrowImageView.setAnimation(animation);
+	}
+
+	private void initFootView(){
+		if(footerView!=null){
+			this.listView.removeFooterView(footerView);
+		}
+		this.listView.addFooterView(LayoutInflater.from(AppDefault.getAppContext()).inflate(R.layout.artlistview_footer,null));
+	}
+
+	private void errorFootView(){
+		if(footerView!=null){
+			this.listView.removeFooterView(footerView);
+		}
+		this.listView.addFooterView(LayoutInflater.from(AppDefault.getAppContext()).inflate(R.layout.artlistview_footer,null));
 	}
 
 
@@ -58,6 +68,14 @@ public class ArtListControlViewPage extends ArtListControlPage {
 		if(this.listView.getFooterViewsCount()==0)
 			this.listView.addFooterView(footerView);
 		super.loadData();
+	}
+
+	@Override
+	public synchronized void notifyDataChanged(AOList tmpList) {
+		super.notifyDataChanged(tmpList);
+		if(page==1){
+			footerView.findViewById(R.id.loading_layout).setVisibility(View.GONE);
+		}
 	}
 
 	protected void finishLoadData(){

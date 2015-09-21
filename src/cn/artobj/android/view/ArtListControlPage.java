@@ -130,6 +130,14 @@ public class ArtListControlPage implements OnScrollListener,AdapterView.OnItemCl
 
 	}
 
+	public void notifyLoadNoData(){
+		notifyLoadNoData("没有相关内容");
+	}
+
+	public void notifyLoadNoData(String msg){
+		Toast.makeText(window, msg, Toast.LENGTH_LONG).show();
+	}
+
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		if(itemToClass==null)return;
