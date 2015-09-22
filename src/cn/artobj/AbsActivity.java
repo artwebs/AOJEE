@@ -15,6 +15,9 @@ public abstract class AbsActivity extends Activity {
 		window=this;
 	}
 
+	protected Activity context(){
+		return this;
+	}
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
