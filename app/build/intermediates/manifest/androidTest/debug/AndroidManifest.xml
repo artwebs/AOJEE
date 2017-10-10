@@ -3,7 +3,7 @@
     package="cn.artobj.test" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="18" />
 
     <instrumentation
@@ -12,6 +12,10 @@
         android:handleProfiling="false"
         android:label="Tests for cn.artobj.test"
         android:targetPackage="cn.artobj.test" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
 
     <application
         android:icon="@drawable/ic_launcher"

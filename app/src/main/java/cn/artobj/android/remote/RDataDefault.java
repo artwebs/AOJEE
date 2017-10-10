@@ -1,5 +1,7 @@
 package cn.artobj.android.remote;
 
+import org.apache.http.NameValuePair;
+
 import cn.artobj.android.app.AOLog;
 import cn.artobj.json.JSONException;
 import cn.artobj.json.JSONObject;
@@ -8,10 +10,8 @@ import cn.artobj.security.AOSecurity3DES;
 import cn.artobj.utils.Base64;
 import cn.artobj.utils.ByteIntLong;
 import cn.artobj.utils.Utils;
-import org.apache.http.NameValuePair;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public abstract class RDataDefault extends RData {
