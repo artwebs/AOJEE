@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/artmenu_layout.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/artmenu_layout.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/binlistitem.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/binlistitem.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/datetime.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/datetime.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/submititem.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/submititem.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/arttabpager.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/arttabpager.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/submit_view_layout.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/submit_view_layout.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/pull_to_refresh.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/activity_main.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/default_head.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/default_head.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/artlistview_footer.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/artlistview_footer.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/artbuttonimage.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/artbuttonimage.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/layout_progress.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/layout_progress.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/diclistitem.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/diclistitem.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/arttabpager_tab_item.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/arttabpager_tab_item.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/default_layout.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/default_layout.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/artsettingitem.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/artsettingitem.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/singlechoice_view.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/singlechoice_view.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/binlist.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/binlist.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/artcamera.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/artcamera.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/progressbar.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/progressbar.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/main.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/main.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/imgbinlistitem.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/imgbinlistitem.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/layout/artlistview_head.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/layout/artlistview_head.xml"
+    }
+]

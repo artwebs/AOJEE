@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable/greenprogress.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable/greenprogress.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable/progress.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable/progress.xml"
+    }
+]

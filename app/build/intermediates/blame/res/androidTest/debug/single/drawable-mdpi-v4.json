@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/check.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/check.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/default_bg.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/default_bg.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/warn.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/warn.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/menu_default_icon.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/menu_default_icon.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/error.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/error.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/header_bg.9.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/header_bg.9.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/img_progress.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/img_progress.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/ico_back.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/ico_back.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/info.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/info.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/menu_default_icon_bg.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-mdpi-v4/menu_default_icon_bg.png"
+    }
+]

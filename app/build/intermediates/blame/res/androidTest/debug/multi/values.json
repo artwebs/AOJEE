@@ -1,0 +1,507 @@
+[
+    {
+        "outputFile": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 41,
+                    "endOffset": 92
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 41,
+                        "endOffset": 92
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 97,
+                    "endColumn": 40,
+                    "endOffset": 133
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 97,
+                        "endColumn": 40,
+                        "endOffset": 133
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 138,
+                    "endColumn": 41,
+                    "endOffset": 175
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 138,
+                        "endColumn": 41,
+                        "endOffset": 175
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 180,
+                    "endColumn": 39,
+                    "endOffset": 215
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 180,
+                        "endColumn": 39,
+                        "endOffset": 215
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 220,
+                    "endColumn": 41,
+                    "endOffset": 257
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 220,
+                        "endColumn": 41,
+                        "endOffset": 257
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 816,
+                    "endColumn": 39,
+                    "endOffset": 851
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 816,
+                        "endColumn": 39,
+                        "endOffset": 851
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 856,
+                    "endColumn": 41,
+                    "endOffset": 893
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 856,
+                        "endColumn": 41,
+                        "endOffset": 893
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 898,
+                    "endColumn": 51,
+                    "endOffset": 945
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 898,
+                        "endColumn": 51,
+                        "endOffset": 945
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 950,
+                    "endColumn": 61,
+                    "endOffset": 1007
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 950,
+                        "endColumn": 61,
+                        "endOffset": 1007
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1012,
+                    "endColumn": 70,
+                    "endOffset": 1078
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 70,
+                        "endOffset": 1078
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1083,
+                    "endColumn": 52,
+                    "endOffset": 1131
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1083,
+                        "endColumn": 52,
+                        "endOffset": 1131
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1136,
+                    "endColumn": 51,
+                    "endOffset": 1183
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1136,
+                        "endColumn": 51,
+                        "endOffset": 1183
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1188,
+                    "endColumn": 55,
+                    "endOffset": 1239
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1188,
+                        "endColumn": 55,
+                        "endOffset": 1239
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1244,
+                    "endColumn": 43,
+                    "endOffset": 1283
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1244,
+                        "endColumn": 43,
+                        "endOffset": 1283
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1288,
+                    "endColumn": 50,
+                    "endOffset": 1334
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1288,
+                        "endColumn": 50,
+                        "endOffset": 1334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1339,
+                    "endColumn": 49,
+                    "endOffset": 1384
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1339,
+                        "endColumn": 49,
+                        "endOffset": 1384
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1389,
+                    "endColumn": 50,
+                    "endOffset": 1435
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1389,
+                        "endColumn": 50,
+                        "endOffset": 1435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1440,
+                    "endColumn": 44,
+                    "endOffset": 1480
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1440,
+                        "endColumn": 44,
+                        "endOffset": 1480
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1485,
+                    "endColumn": 59,
+                    "endOffset": 1540
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1485,
+                        "endColumn": 59,
+                        "endOffset": 1540
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1545,
+                    "endColumn": 53,
+                    "endOffset": 1594
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1545,
+                        "endColumn": 53,
+                        "endOffset": 1594
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1599,
+                    "endColumn": 44,
+                    "endOffset": 1639
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1599,
+                        "endColumn": 44,
+                        "endOffset": 1639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1644,
+                    "endColumn": 49,
+                    "endOffset": 1689
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1644,
+                        "endColumn": 49,
+                        "endOffset": 1689
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1694,
+                    "endColumn": 49,
+                    "endOffset": 1739
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1694,
+                        "endColumn": 49,
+                        "endOffset": 1739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1744,
+                    "endLine": 36,
+                    "endColumn": 12,
+                    "endOffset": 2030
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1744,
+                        "endLine": 36,
+                        "endColumn": 12,
+                        "endOffset": 2030
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2035,
+                    "endLine": 39,
+                    "endColumn": 12,
+                    "endOffset": 2190
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 2035,
+                        "endLine": 39,
+                        "endColumn": 12,
+                        "endOffset": 2190
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2195,
+                    "endLine": 42,
+                    "endColumn": 12,
+                    "endOffset": 2291
+                },
+                "from": {
+                    "file": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 2195,
+                        "endLine": 42,
+                        "endColumn": 12,
+                        "endOffset": 2291
+                    }
+                }
+            }
+        ]
+    }
+]

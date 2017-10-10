@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/mic.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-hdpi-v4/mic.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ico_go.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-hdpi-v4/ico_go.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/datetimeicon.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-hdpi-v4/datetimeicon.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-hdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/arrow.png",
+        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/bundles/debug/res/drawable-hdpi-v4/arrow.png"
+    }
+]
