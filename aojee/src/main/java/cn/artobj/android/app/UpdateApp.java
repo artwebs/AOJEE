@@ -40,15 +40,15 @@ public class UpdateApp {
 	public static void install(ContextWrapper activity)
 	{
 		Log.d(tag,"UpdateApp start");
-		installWithString(activity,getCtlContent());
+		install(activity,getCtlContent());
 	}
 	
-	public static void installWithUrl(final ContextWrapper activity,final String url)
+	public static void install(final ContextWrapper activity,final String url)
 	{
-		installWithUrl(activity, url,DATAType.XML);
+		install(activity, url,DATAType.JSON);
 	}
 	
-	public static void installWithUrl(final ContextWrapper activity,final String url,final DATAType type)
+	public static void install(final ContextWrapper activity,final String url,final DATAType type)
 	{
 		obj=new UpdateApp();
 		new Thread(new Runnable(){
