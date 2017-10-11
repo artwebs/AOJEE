@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_launcher.png",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
         "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_launcher.png",
         "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/drawable-ldpi/ic_launcher.png"
     },
