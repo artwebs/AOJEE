@@ -4,12 +4,12 @@
         "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/progressbar.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_icon_group.xml"
-    },
-    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/diclistitem.xml",
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/diclistitem.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
