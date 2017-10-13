@@ -194,7 +194,7 @@ public class UpdateApp {
     {
     	Version obj=new Version();
     	obj.setAppName(AppDefault.getAppName());
-    	obj.setVersion(Long.valueOf(AppDefault.getPKG().versionCode));
+    	obj.setVersion(Double.valueOf(AppDefault.getPKG().versionName));
     	obj.setUpdateUrl("");
     	return obj;
     }
@@ -227,7 +227,8 @@ public class UpdateApp {
 			
 			ctlVersion.setAppName(updateData.getString("appName"));
 	    	ctlVersion.setUpdateUrl(updateData.getString("updateUrl"));
-	    	ctlVersion.setVersion(Long.valueOf(updateData.getString("version")));
+	    	ctlVersion.setVersion(Double.valueOf(updateData.getString("version")));
+			Double.valueOf("1");
 	    	ctlVersion.setApkSize(Integer.parseInt(updateData.getString("apkSize")));
 		} catch (Exception e) {
 			// TODO: handle exception

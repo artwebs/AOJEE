@@ -1,23 +1,15 @@
 [
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/progressbar.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/progressbar.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/diclistitem.xml",
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/diclistitem.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_view.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/arttabpager_tab_item.xml",
@@ -28,48 +20,28 @@
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artcamera.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artbuttonimage.xml",
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artbuttonimage.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/binlist.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/binlist.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artsettingitem.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artsettingitem.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/arttabpager.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/arttabpager.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_time.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_custom_big.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/singlechoice_view.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/singlechoice_view.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/binlist.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/binlist.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
@@ -80,68 +52,48 @@
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/activity_main.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/layout_progress.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/layout_progress.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_simple.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artlistview_footer.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/artlistview_footer.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/pull_to_refresh.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/pull_to_refresh.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/arttabpager_tab_item.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/arttabpager_tab_item.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/default_head.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/default_head.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artmenu_layout.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artmenu_layout.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/datetime.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/datetime.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_action.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/arttabpager.xml",
@@ -152,136 +104,88 @@
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/submititem.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/default_layout.xml",
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/default_layout.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artlistview_head.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/artlistview_head.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_content_include.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artbuttonimage.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/artbuttonimage.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_item_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_lines_media.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_media.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artlistview_head.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artlistview_head.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/default_head.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/default_head.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artsettingitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/artsettingitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_time.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/submit_view_layout.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/submit_view_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/submit_view_layout.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/submit_view_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/pull_to_refresh.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/pull_to_refresh.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_select_dialog_material.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/imgbinlistitem.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/imgbinlistitem.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/binlistitem.xml",
         "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/binlistitem.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/main.xml"
-    },
-    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/main.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_mode_bar.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_action_tombstone.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/progressbar.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/progressbar.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/singlechoice_view.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/singlechoice_view.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/datetime.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/datetime.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_action.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_action.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_dialog_title_material.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/default_head.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/default_head.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/datetime.xml",
@@ -296,28 +200,12 @@
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_lines_media.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/diclistitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/diclistitem.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/submititem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/submititem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/binlistitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/binlistitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_view.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artlistview_footer.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artlistview_footer.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/submit_view_layout.xml",
@@ -328,392 +216,8 @@
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/artlistview_head.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/artlistview_head.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_item_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/progressbar.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/progressbar.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/artmenu_layout.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/artmenu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/main.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_lines_media.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artcamera.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/artcamera.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/binlistitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/binlistitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_item_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artsettingitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artsettingitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_media.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/artcamera.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/artcamera.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_action.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_action.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/binlist.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/binlist.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/default_layout.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/default_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/layout_progress.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/layout_progress.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artmenu_layout.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artmenu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_time.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/arttabpager.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/arttabpager.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/pull_to_refresh.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/pull_to_refresh.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_simple.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/imgbinlistitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/imgbinlistitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/imgbinlistitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/imgbinlistitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_view.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_content_include.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_media_custom.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artlistview_head.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artlistview_head.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/pull_to_refresh.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/pull_to_refresh.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/imgbinlistitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/imgbinlistitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/singlechoice_view.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/singlechoice_view.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/singlechoice_view.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/singlechoice_view.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/artlistview_footer.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/artlistview_footer.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/submititem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/submititem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/artbuttonimage.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/artbuttonimage.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/artsettingitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/artsettingitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/arttabpager_tab_item.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/arttabpager_tab_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_media_custom.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artmenu_layout.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/artmenu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/default_head.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/default_head.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/default_layout.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/default_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/artlistview_footer.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/artlistview_footer.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
@@ -724,35 +228,27 @@
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_media_custom.xml"
     },
     {
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/progressbar.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/progressbar.xml"
+    },
+    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/layout_progress.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/src/main/res/layout/layout_progress.xml"
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/src/main/res/layout/main.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/notification_template_media.xml"
     },
     {
+        "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/diclistitem.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/diclistitem.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/layout_progress.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/layout_progress.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/layout/binlist.xml",
-        "source": "/Volumes/AOSSD/workspace/Android/AOJEE/app/src/main/res/layout/binlist.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     }
 ]

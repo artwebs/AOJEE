@@ -1,26 +1,10 @@
 [
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

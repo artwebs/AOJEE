@@ -1,13 +1,5 @@
 [
     {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/aojee/build/intermediates/res/merged/androidTest/debug/drawable-v23/abc_control_background_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/drawable-v23/abc_control_background_material.xml"
-    },
-    {
-        "merged": "/Volumes/AOSSD/workspace/Android/AOJEE/app/build/intermediates/res/merged/androidTest/debug/drawable-v23/abc_control_background_material.xml",
-        "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/drawable-v23/abc_control_background_material.xml"
-    },
-    {
         "merged": "/Volumes/AOSSD/workspace/Android/zcapp/AOJEE/aojee/build/intermediates/res/merged/androidTest/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Users/liuhongbin/.android/build-cache/7b247f9bb30c0cb95ab5558fe36bbe67aab6a95a/output/res/drawable-v23/abc_control_background_material.xml"
     }

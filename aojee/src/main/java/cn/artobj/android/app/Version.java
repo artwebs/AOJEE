@@ -1,15 +1,15 @@
 package cn.artobj.android.app;
 
 public class Version {
-	private long version;
+	private double version;
 	private String updateUrl;
 	private String appName;
 	private int apkSize;
 	
-	public long getVersion() {
+	public double getVersion() {
 		return version;
 	}
-	public void setVersion(long version) {
+	public void setVersion(double version) {
 		this.version = version;
 	}
 	public String getUpdateUrl() {
