@@ -5,15 +5,20 @@ import cn.artobj.utils.HttpDownloader;
 import cn.artobj.utils.Utils;
 import cn.artobj.json.JSONObject;
 
+import android.Manifest;
 import android.R;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -25,7 +30,7 @@ public class UpdateApp {
 	private static UpdateApp obj;
 	private Version version;
 	private ContextWrapper activity;
-	private static String path="artintall";
+	private static String path="artinstall";
 	public static enum DATAType
 	{
 		JSON,
@@ -154,7 +159,12 @@ public class UpdateApp {
 						Toast.makeText(AppDefault.getAppContext(), "设备无SDCard，无法完成自动升级",Toast.LENGTH_LONG).show();
 						return;
 					}
-					downApk();
+					if (ContextCompat.checkSelfPermission(AppDefault.getAppContext(), android.Manifest.permission.WRITE_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED){
+						downApk();
+					}else {
+						//申请权限
+						ActivityCompat.requestPermissions((Activity) obj.activity, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+					}
 				}
 				 
 			 })

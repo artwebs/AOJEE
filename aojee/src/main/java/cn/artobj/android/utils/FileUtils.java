@@ -16,8 +16,11 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
+import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 
 public class FileUtils {
@@ -184,11 +187,17 @@ public class FileUtils {
 	{
 		File file=new File(filename);
 		Intent intent=new Intent();
-		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		intent.setAction(Intent.ACTION_VIEW);
-		String type="application/vnd.android.package-archive";
-		intent.setDataAndType(Uri.fromFile(file), type);
-		activity.startActivity(intent);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setAction(Intent.ACTION_VIEW);
+
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            Uri contentUri = FileProvider.getUriForFile(activity, "cn.artobj.fileProvider", file );
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            intent.setDataAndType(contentUri,"application/vnd.android.package-archive");
+		} else {
+            intent.setDataAndType(Uri.fromFile(file),"application/vnd.android.package-archive");
+		}
+        activity.startActivity(intent);
 //		file.delete();
 	}
 
