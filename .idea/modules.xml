@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AOJEE.iml" filepath="$PROJECT_DIR$/AOJEE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aojee/aojee.iml" filepath="$PROJECT_DIR$/aojee/aojee.iml" />
+    </modules>
+  </component>
+</project>
